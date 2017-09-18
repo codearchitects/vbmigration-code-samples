@@ -1,0 +1,25 @@
+VB MP3 Player 0.1.7
+
+Information:
+
+VB MP3 Player is a simple media player, and it should play MP3, WAVE and MIDI files.
+
+The source code is quite messy, and not all of the remarks are in English yet.
+I'm working now on translating the change log and the source to English, but it may take a long time until I'll finish that task.
+The VB Runtime 6.0 files are required for running the player.
+
+The file 'modShapedForm.bas' was created with TracEr (a program made by Richard Leitao, it's free and can be downloaded from- http://www.vbside.com/programPg.asp?pid=6&DetailID=1)
+
+What's new:
+
+* In the open dialog, the multi-select is allowed.
+
+* The menu can be also opened from the playlist window.
+
+* WAVE files are now supported.
+
+* Now it's possible to open MP3 files with the command line.
+
+* New tooltip for the timer that shows the file length.
+
+* New tooltip for the playlist that shows the full name of the selected file.

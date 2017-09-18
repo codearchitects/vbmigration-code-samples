@@ -1,0 +1,405 @@
+[Root]
+Most Recent Package=Type-N-sign
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\setup
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+C:\Program Files\Common Files\System\ado\msado20.tlb=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+C:\WINNT\system32\MSCOMCTL.OCX=
+C:\WINNT\system32\comdlg32.ocx=
+
+[Package|Standard Setup Package 1|Files Added]
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\z.jpg=
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\a.jpg=
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\b.jpg=
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\c.jpg=
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\d.jpg=
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\e.jpg=
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\f.jpg=
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\g.jpg=
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\h.jpg=
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\hands.mod=
+
+[Package|Standard Setup Package 1|Files Removed]
+c:\documents and settings\administrator\desktop\working\typensign\new folder\sign\z.jpg=
+c:\documents and settings\administrator\desktop\working\typensign\new folder\sign\a.jpg=
+c:\documents and settings\administrator\desktop\working\typensign\new folder\sign\b.jpg=
+c:\documents and settings\administrator\desktop\working\typensign\new folder\sign\c.jpg=
+c:\documents and settings\administrator\desktop\working\typensign\new folder\sign\d.jpg=
+c:\documents and settings\administrator\desktop\working\typensign\new folder\sign\e.jpg=
+c:\documents and settings\administrator\desktop\working\typensign\new folder\sign\f.jpg=
+c:\documents and settings\administrator\desktop\working\typensign\new folder\sign\g.jpg=
+c:\documents and settings\administrator\desktop\working\typensign\new folder\sign\h.jpg=
+c:\documents and settings\administrator\desktop\working\typensign\new folder\sign\hands.mod=
+
+[Package|Standard Setup Package 1|Files In Project]
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\Typnsign.exe=Yes
+C:\WINNT\system32\msvbvm60.dll=Yes
+C:\WINNT\system32\oleaut32.dll=Yes
+C:\WINNT\system32\olepro32.dll=Yes
+C:\WINNT\system32\asycfilt.dll=Yes
+C:\WINNT\system32\stdole2.tlb=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINNT\system32\comdlg32.ocx=Yes
+C:\WINNT\system32\MSCOMCTL.OCX=Yes
+C:\WINNT\system32\MSDBRPTR.DLL=Yes
+C:\WINNT\system32\MSSTDFMT.DLL=Yes
+C:\Program Files\Common Files\Designer\MSDERUN.DLL=Yes
+C:\Program Files\Common Files\System\ado\msado20.tlb=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINNT\system32\VB6STKIT.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\z.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\a.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\b.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\c.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\d.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\e.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\f.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\g.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\h.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\hands.mod=No
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\Typnsign.exe=$(AppPath)
+C:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\stdole2.tlb=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\comdlg32.ocx=$(WinSysPath)
+C:\WINNT\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINNT\system32\MSDBRPTR.DLL=$(WinSysPath)
+C:\WINNT\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\Program Files\Common Files\Designer\MSDERUN.DLL=$(CommonFiles)\designer
+C:\Program Files\Common Files\System\ado\msado20.tlb=$(WinSysPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\Typnsign.exe=No
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=Type-N-Sign
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=Type-N-Sign
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|Type-N-Sign]
+Icon1=Typnsign.exe
+Title1=Type-N-Sign
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\setup
+ProjectFolder=C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder
+ServerSideCab=
+File1=C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\setup\setup.exe
+File2=C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\setup\Setup.Lst
+File3=C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\setup\Typnsign.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Type-N-sign|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\SetupFiles
+
+[Package|Type-N-sign|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Type-N-sign|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Type-N-sign|Files Found]
+a.jpg=C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\a.jpg
+
+[Package|Type-N-sign|Files Released]
+
+[Package|Type-N-sign|Missing Dependency Information]
+C:\Program Files\Common Files\System\ado\msado20.tlb=
+
+[Package|Type-N-sign|Out-of-Date Dependency Information]
+C:\WINNT\system32\MSCOMCTL.OCX=
+C:\WINNT\system32\comdlg32.ocx=
+
+[Package|Type-N-sign|Files Added]
+z.jpg=
+a.jpg=
+b.jpg=
+c.jpg=
+d.jpg=
+e.jpg=
+f.jpg=
+g.jpg=
+h.jpg=
+hands.mod=
+i.jpg=
+j.jpg=
+k.jpg=
+l.jpg=
+m.jpg=
+n.jpg=
+o.jpg=
+p.jpg=
+q.jpg=
+r.jpg=
+s.jpg=
+t.jpg=
+u.jpg=
+v.jpg=
+w.jpg=
+x.jpg=
+y.jpg=
+
+[Package|Type-N-sign|Files Removed]
+
+[Package|Type-N-sign|Files In Project]
+C:\WINNT\system32\msvbvm60.dll=Yes
+C:\WINNT\system32\oleaut32.dll=Yes
+C:\WINNT\system32\olepro32.dll=Yes
+C:\WINNT\system32\asycfilt.dll=Yes
+C:\WINNT\system32\stdole2.tlb=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINNT\system32\comdlg32.ocx=Yes
+C:\WINNT\system32\MSCOMCTL.OCX=Yes
+C:\WINNT\system32\MSDBRPTR.DLL=Yes
+C:\WINNT\system32\MSSTDFMT.DLL=Yes
+C:\Program Files\Common Files\Designer\MSDERUN.DLL=Yes
+C:\Program Files\Common Files\System\ado\msado20.tlb=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINNT\system32\VB6STKIT.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\Typnsign.exe=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\z.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\a.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\b.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\c.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\d.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\e.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\f.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\g.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\h.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\hands.mod=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\i.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\j.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\k.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\l.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\m.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\n.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\o.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\p.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\q.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\r.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\s.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\t.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\u.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\v.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\w.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\x.jpg=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\y.jpg=Yes
+
+[Package|Type-N-sign|Configure Registry Files]
+Applicable=No
+
+[Package|Type-N-sign|Configure Remote Servers]
+Applicable=No
+
+[Package|Type-N-sign|Install Locations]
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\Typnsign.exe=$(AppPath)
+C:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\stdole2.tlb=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\comdlg32.ocx=$(WinSysPath)
+C:\WINNT\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINNT\system32\MSDBRPTR.DLL=$(WinSysPath)
+C:\WINNT\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\Program Files\Common Files\Designer\MSDERUN.DLL=$(CommonFiles)\designer
+C:\Program Files\Common Files\System\ado\msado20.tlb=$(WinSysPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\z.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\a.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\b.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\c.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\d.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\e.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\f.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\g.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\h.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\hands.mod=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\i.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\j.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\k.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\l.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\m.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\n.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\o.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\p.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\q.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\r.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\s.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\t.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\u.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\v.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\w.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\x.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\y.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\Typnsign.exe=$(AppPath)
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\z.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\a.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\b.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\c.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\d.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\e.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\f.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\g.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\h.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\hands.mod=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\i.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\j.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\k.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\l.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\m.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\n.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\o.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\p.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\q.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\r.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\s.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\t.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\u.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\v.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\w.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\x.jpg=$(AppPath)\sign
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\y.jpg=$(AppPath)\sign
+
+[Package|Type-N-sign|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\Typnsign.exe=No
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\z.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\a.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\b.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\c.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\d.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\e.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\f.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\g.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\h.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\hands.mod=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\i.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\j.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\k.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\l.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\m.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\n.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\o.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\p.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\q.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\r.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\s.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\t.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\u.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\v.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\w.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\x.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\New Folder\sign\y.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\Typnsign.exe=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\z.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\a.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\b.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\c.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\d.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\e.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\f.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\g.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\h.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\hands.mod=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\i.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\j.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\k.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\l.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\m.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\n.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\o.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\p.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\q.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\r.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\s.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\t.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\u.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\v.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\w.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\x.jpg=No
+C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\sign\y.jpg=No
+
+[Package|Type-N-sign|Distribution]
+Type=single
+Size=
+Title=Type-N-Sign
+
+[Package|Type-N-sign|IconGroups]
+Group0=Type-N-Sign
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Type-N-sign|Type-N-Sign]
+Icon1=Typnsign.exe
+Title1=Type-N-Sign
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Type-N-sign|Package]
+PackageFolder=C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\SetupFiles
+ProjectFolder=C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign
+ServerSideCab=
+File1=C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\SetupFiles\setup.exe
+File2=C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\SetupFiles\Setup.Lst
+File3=C:\Documents and Settings\Administrator\Desktop\Working\TypeNsign\TypeNsign\TypNsign\SetupFiles\Typnsign.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

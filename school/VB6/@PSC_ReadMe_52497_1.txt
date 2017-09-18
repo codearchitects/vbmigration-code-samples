@@ -1,0 +1,6 @@
+Title: [[[__CSRS version 1 / Using ADO__]]]
+Description: This is a complete Computerize School Registration Software which can be customize according to the name of the school. This software include record of users log-in and etc. The software also calculate how many student are curently enrolled and also update the allowed student per section every time you enrolled new student and it is similar to Inventory System ( download this to see more function ) . The application used ADO , String Manipulation , File System , Listview Control and etc ( see the include information for more ). For software like Accounting , Billing , POS ( Point Of Sales ), Account Recievable and etc. just log-on to www.naparansoft.cjb.net . This for all level of programmer . PLEASE DON'T FOR GET TO VOTE ! [ Philip V. Naparan ]
+This file came from Planet-Source-Code.com...the home millions of lines of source code
+You can view comments on this code/and or vote on it at: http://www.Planet-Source-Code.com/vb/scripts/ShowCode.asp?txtCodeId=52497&lngWId=1
+
+The author may have retained certain copyrights to this code...please observe their request and the law by reviewing all copyright conditions at the above URL.

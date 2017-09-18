@@ -1,0 +1,93 @@
+[Root]
+Most Recent Package=GerP Soft
+
+
+[Package|GerP Soft|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=D:\Documents and Settings\Gerbert\Desktop\GerP Soft\Package
+
+[Package|GerP Soft|Configure DAO ISAMs]
+Applicable=No
+
+[Package|GerP Soft|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|GerP Soft|Files Found]
+
+[Package|GerP Soft|Files Released]
+
+[Package|GerP Soft|Missing Dependency Information]
+
+[Package|GerP Soft|Out-of-Date Dependency Information]
+D:\WINDOWS\system32\comctl32.ocx=
+
+[Package|GerP Soft|Files Added]
+
+[Package|GerP Soft|Files Removed]
+
+[Package|GerP Soft|Files In Project]
+D:\Documents and Settings\Gerbert\Desktop\GerP Soft\GerP Soft.exe=Yes
+D:\WINDOWS\system32\msvbvm60.dll=Yes
+D:\WINDOWS\system32\oleaut32.dll=Yes
+D:\WINDOWS\system32\olepro32.dll=Yes
+D:\WINDOWS\system32\asycfilt.dll=Yes
+D:\WINDOWS\system32\stdole2.tlb=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+D:\WINDOWS\system32\COMDLG32.OCX=Yes
+D:\WINDOWS\system32\comctl32.ocx=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+D:\WINDOWS\system32\VB6STKIT.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|GerP Soft|Configure Registry Files]
+Applicable=No
+
+[Package|GerP Soft|Configure Remote Servers]
+Applicable=No
+
+[Package|GerP Soft|Install Locations]
+D:\Documents and Settings\Gerbert\Desktop\GerP Soft\GerP Soft.exe=$(AppPath)
+D:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+D:\WINDOWS\system32\COMDLG32.OCX=$(WinSysPath)
+D:\WINDOWS\system32\comctl32.ocx=$(WinSysPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+D:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|GerP Soft|Configure Shared Files]
+Applicable=Yes
+D:\Documents and Settings\Gerbert\Desktop\GerP Soft\GerP Soft.exe=Yes
+
+[Package|GerP Soft|Distribution]
+Type=single
+Size=
+Title=GerP Soft
+
+[Package|GerP Soft|IconGroups]
+Group0=GerP Soft
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|GerP Soft|GerP Soft]
+Icon1="GerP Soft.exe"
+Title1=GerP Soft
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|GerP Soft|Package]
+PackageFolder=D:\Documents and Settings\Gerbert\Desktop\GerP Soft\Package
+ProjectFolder=D:\Documents and Settings\Gerbert\Desktop\GerP Soft
+ServerSideCab=
+File1=D:\Documents and Settings\Gerbert\Desktop\GerP Soft\Package\setup.exe
+File2=D:\Documents and Settings\Gerbert\Desktop\GerP Soft\Package\Setup.Lst
+File3=D:\Documents and Settings\Gerbert\Desktop\GerP Soft\Package\GerP Soft.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

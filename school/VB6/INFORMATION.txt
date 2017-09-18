@@ -1,0 +1,91 @@
+'-----------------------------------------------------------------------------------------------------
+'All codes are copyright by Philip V. Naparan 2004
+'
+'Website: www.naparansoft.cjb.net,www.philipnaparan.cjb.net,www.philipnaparan.com(under construction)
+'E-mail Address: philipnaparan@yahoo.com
+'Contact #: 639186443161
+'----------------------------------------------------------------------------------------------------
+
+
+Information:
+
+Database Password: reg386
+
+
+Log-in as Administrator:
+
+-Username=Admin
+-Password=admin
+
+Log-in as User:
+
+-Username=User
+-Password=user
+
+
+
+Note: Some form of it was repeated like the select year form and etc., I did not optimized it coz I
+I don't have time. By the way this is my special project which I started created last March 15, 2004
+and finished last March 18, 2004 and I distributed it to some public school here for free last
+March 19-20, 2004 and upload it to pscode last March 20, 2004 because of special request of my
+fellow Filipino in New York. Your comment suggestion and etc is very welcome.
+
+- YOU CAN VISIT www.naparansoft.cjb.net IF YOU WANT TO VIEW SOME OF MY SOFTWARES -
+
+
+
+Note:
+	Im willing to work abroad in any of the fallowing computer job:
+
+	1. Visual Basic or Visual Basic.NET programmer
+	2. A webdeveloper using ASP/ASP.NET or PHP
+	3. A system analyst or database designer
+	4. Computer Networking
+	5. Or any other job.
+
+
+	I have many experience in making the fallowing softwares in my client 
+	here in the Philippines:
+
+	1. Inventory System
+	2. Payroll System
+	3. Account Recievable System
+	4. Billing System
+	5. Accounting System
+	6. MIS
+
+	Im expert in the fallowing langguages:
+	
+	1. Visual Basic 6.0 using DAO and ADO
+	2. Visual Basic.NET using ADO.NET
+	3. ASP
+	4. ASP.NET
+	5. PHP	
+	
+	- Im also knowledgable in the code normalization and optimization -
+	
+	Im expert in the fallowing DBMS:
+	
+	1. SQL Server 6.0  and Higher
+	2. MS Access
+	3. mySQL
+	
+	- Im also knowledgable in the database normalization and optimization -
+	
+	I have also a knowledge and experience in using the fallowing langguages:	
+	
+	1. Java
+	2. c/c++ and c#
+	3. Pearl
+		
+	Others
+
+	- Just logon to my website www.naparansoft.cjb.net for more -
+
+
+	 If you want me to work in your company just contact me. :-)
+
+
+	///// I LIKE TO WORK TO THE REAL AND SAVED CHRISTIAN PEOPLE \\\\\
+
+

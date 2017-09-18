@@ -1,0 +1,1384 @@
+
+<HTML><HEAD><TITLE>Drawing Barcodes  Code 128 </TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<LINK 
+href="global.css" 
+type=text/css rel=stylesheet>
+<META content="MSHTML 5.50.4807.2300" name=GENERATOR></HEAD>
+<BODY text=black vLink=purple aLink=red link=blue bgColor=white leftMargin=3 
+topMargin=3>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#ff9900 border=0>
+  <TBODY>
+  <TR>
+    <TD width="100%"></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=1 border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <TD vAlign=top bgColor=#fbedbb rowSpan=2>
+      <P align=center>&nbsp;</P></TD>
+   
+    <TD align=right width="100%" bgColor=white><A name=__top></A>
+      <TABLE align=center>
+        <TBODY>
+        <TR>
+          <TD class=smallText align=right>      
+            </TD>
+          <TD></TD></TR>
+        <TR>
+          <TD class=smallText align=right colSpan=2>   
+  </TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD vAlign=top width="100%"><!-- Article Starts -->
+      <P align=center>&nbsp;</P>
+      <H2 align=center>Introduction</H2>
+      <P>         A recent project 
+      at work required that I write out barcode characters and read&nbsp;them. This 
+      experience inspired me to start a side project writing some code that renders a 
+      barcode on the Windows screen, given the proper input. This is the 
+      result of that project</P>
+      <H2 align=center>Code 128 basics</H2>
+      <P>Code 128 is a very high density alpha-numeric code that was introduced 
+      in 1981 and is being used in a variety of applications. Code 128 
+      characters consist of 3 bars and 3 spaces, which are built by using 11 
+      modules each of which can be black or white. Because all of the characters 
+      are built from the same 11 modules, there really is only one element width 
+      that needs to be defined, the module width. The bar/space patterns for the 
+      107 data characters and the start/stop codes are listed below. Each 
+      pattern is 11 characters (modules) long, and is either 'b' (that module is 
+      a bar) or 's' (that module is a space). Note that there are three subsets 
+      to Code 128, Subset A and B cover the ASCII character set, and Subset C is 
+      a double-density numeric-only subset. Three different start characters 
+      tell the barcode reader which subset is the starting subset, and three 
+      shift characters allow changing subsets within a Code 128 barcode.</P>
+      <TABLE style="PAGE-BREAK-BEFORE: always" cellSpacing=0 cellPadding=0 
+      width="100%" border=1>
+        <COLGROUP>
+        <COL width=51>
+        <COL width=51>
+        <COL width=51>
+        <COL width=51>
+        <COL width=51>
+        <TBODY>
+        <TR vAlign=top>
+          <TD width="20%" <P>Code A
+            <P></P></TD>
+          <TD width="20%" <P>Code B
+            <P></P></TD>
+          <TD width="20%" <P>Code C
+            <P></P></TD>
+          <TD width="20%" <P>Value
+            <P></P></TD>
+          <TD width="20%" <P>Pattern
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>Space
+            <P></P></TD>
+          <TD width="20%" <P>Space
+            <P></P></TD>
+          <TD width="20%" <P>00
+            <P></P></TD>
+          <TD width="20%" <P>0
+            <P></P></TD>
+          <TD width="20%" <P>bbsbbssbbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>!
+            <P></P></TD>
+          <TD width="20%" <P>!
+            <P></P></TD>
+          <TD width="20%" <P>01
+            <P></P></TD>
+          <TD width="20%" <P>1
+            <P></P></TD>
+          <TD width="20%" <P>bbssbbsbbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>“
+            <P></P></TD>
+          <TD width="20%" <P>“
+            <P></P></TD>
+          <TD width="20%" <P>02
+            <P></P></TD>
+          <TD width="20%" <P>2
+            <P></P></TD>
+          <TD width="20%" <P>bbssbbssbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>#
+            <P></P></TD>
+          <TD width="20%" <P>#
+            <P></P></TD>
+          <TD width="20%" <P>03
+            <P></P></TD>
+          <TD width="20%" <P>3
+            <P></P></TD>
+          <TD width="20%" <P>bssbssbbsss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>$
+            <P></P></TD>
+          <TD width="20%" <P>$
+            <P></P></TD>
+          <TD width="20%" <P>04
+            <P></P></TD>
+          <TD width="20%" <P>4
+            <P></P></TD>
+          <TD width="20%" <P>bssbsssbbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>%
+            <P></P></TD>
+          <TD width="20%" <P>%
+            <P></P></TD>
+          <TD width="20%" <P>05
+            <P></P></TD>
+          <TD width="20%" <P>5
+            <P></P></TD>
+          <TD width="20%" <P>bsssbssbbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>&amp;
+            <P></P></TD>
+          <TD width="20%" <P>&amp;
+            <P></P></TD>
+          <TD width="20%" <P>06
+            <P></P></TD>
+          <TD width="20%" <P>6
+            <P></P></TD>
+          <TD width="20%" <P>bssbbssbsss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>'
+            <P></P></TD>
+          <TD width="20%" <P>(
+            <P></P></TD>
+          <TD width="20%" <P>07
+            <P></P></TD>
+          <TD width="20%" <P>7
+            <P></P></TD>
+          <TD width="20%" <P>bssbbsssbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>(
+            <P></P></TD>
+          <TD width="20%" <P>)
+            <P></P></TD>
+          <TD width="20%" <P>08
+            <P></P></TD>
+          <TD width="20%" <P>8
+            <P></P></TD>
+          <TD width="20%" <P>bsssbbssbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>)
+            <P></P></TD>
+          <TD width="20%" <P>*
+            <P></P></TD>
+          <TD width="20%" <P>09
+            <P></P></TD>
+          <TD width="20%" <P>9
+            <P></P></TD>
+          <TD width="20%" <P>bbssbssbsss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>*
+            <P></P></TD>
+          <TD width="20%" <P>*
+            <P></P></TD>
+          <TD width="20%" <P>10
+            <P></P></TD>
+          <TD width="20%" <P>10
+            <P></P></TD>
+          <TD width="20%" <P>bbssbsssbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>+
+            <P></P></TD>
+          <TD width="20%" <P>+
+            <P></P></TD>
+          <TD width="20%" <P>11
+            <P></P></TD>
+          <TD width="20%" <P>11
+            <P></P></TD>
+          <TD width="20%" <P>bbsssbssbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>,
+            <P></P></TD>
+          <TD width="20%" <P>,
+            <P></P></TD>
+          <TD width="20%" <P>12
+            <P></P></TD>
+          <TD width="20%" <P>12
+            <P></P></TD>
+          <TD width="20%" <P>bsbbssbbbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>-
+            <P></P></TD>
+          <TD width="20%" <P>-
+            <P></P></TD>
+          <TD width="20%" <P>13
+            <P></P></TD>
+          <TD width="20%" <P>13
+            <P></P></TD>
+          <TD width="20%" <P>bssbbsbbbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>.
+            <P></P></TD>
+          <TD width="20%" <P>.
+            <P></P></TD>
+          <TD width="20%" <P>14
+            <P></P></TD>
+          <TD width="20%" <P>14
+            <P></P></TD>
+          <TD width="20%" <P>bssbbssbbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>/
+            <P></P></TD>
+          <TD width="20%" <P>/
+            <P></P></TD>
+          <TD width="20%" <P>15
+            <P></P></TD>
+          <TD width="20%" <P>15
+            <P></P></TD>
+          <TD width="20%" <P>bsbbbssbbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>0
+            <P></P></TD>
+          <TD width="20%" <P>0
+            <P></P></TD>
+          <TD width="20%" <P>16
+            <P></P></TD>
+          <TD width="20%" <P>16
+            <P></P></TD>
+          <TD width="20%" <P>bssbbbsbbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>1
+            <P></P></TD>
+          <TD width="20%" <P>1
+            <P></P></TD>
+          <TD width="20%" <P>17
+            <P></P></TD>
+          <TD width="20%" <P>17
+            <P></P></TD>
+          <TD width="20%" <P>bssbbbssbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>2
+            <P></P></TD>
+          <TD width="20%" <P>2
+            <P></P></TD>
+          <TD width="20%" <P>18
+            <P></P></TD>
+          <TD width="20%" <P>18
+            <P></P></TD>
+          <TD width="20%" <P>bbssbbbssbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>3
+            <P></P></TD>
+          <TD width="20%" <P>3
+            <P></P></TD>
+          <TD width="20%" <P>19
+            <P></P></TD>
+          <TD width="20%" <P>19
+            <P></P></TD>
+          <TD width="20%" <P>bbssbsbbbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>4
+            <P></P></TD>
+          <TD width="20%" <P>4
+            <P></P></TD>
+          <TD width="20%" <P>20
+            <P></P></TD>
+          <TD width="20%" <P>20
+            <P></P></TD>
+          <TD width="20%" <P>bbssbssbbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>5
+            <P></P></TD>
+          <TD width="20%" <P>5
+            <P></P></TD>
+          <TD width="20%" <P>21
+            <P></P></TD>
+          <TD width="20%" <P>21
+            <P></P></TD>
+          <TD width="20%" <P>bbsbbbssbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>6
+            <P></P></TD>
+          <TD width="20%" <P>6
+            <P></P></TD>
+          <TD width="20%" <P>22
+            <P></P></TD>
+          <TD width="20%" <P>22
+            <P></P></TD>
+          <TD width="20%" <P>bbssbbbsbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>7
+            <P></P></TD>
+          <TD width="20%" <P>7
+            <P></P></TD>
+          <TD width="20%" <P>23
+            <P></P></TD>
+          <TD width="20%" <P>23
+            <P></P></TD>
+          <TD width="20%" <P>bbbsbbsbbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>8
+            <P></P></TD>
+          <TD width="20%" <P>8
+            <P></P></TD>
+          <TD width="20%" <P>24
+            <P></P></TD>
+          <TD width="20%" <P>24
+            <P></P></TD>
+          <TD width="20%" <P>bbbsbssbbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>9
+            <P></P></TD>
+          <TD width="20%" <P>9
+            <P></P></TD>
+          <TD width="20%" <P>25
+            <P></P></TD>
+          <TD width="20%" <P>25
+            <P></P></TD>
+          <TD width="20%" <P>bbbssbsbbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>:
+            <P></P></TD>
+          <TD width="20%" <P>:
+            <P></P></TD>
+          <TD width="20%" <P>26
+            <P></P></TD>
+          <TD width="20%" <P>26
+            <P></P></TD>
+          <TD width="20%" <P>bbbssbssbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>;
+            <P></P></TD>
+          <TD width="20%" <P>;
+            <P></P></TD>
+          <TD width="20%" <P>27
+            <P></P></TD>
+          <TD width="20%" <P>27
+            <P></P></TD>
+          <TD width="20%" <P>bbbsbbssbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>&lt;
+            <P></P></TD>
+          <TD width="20%" <P>&lt;
+            <P></P></TD>
+          <TD width="20%" <P>28
+            <P></P></TD>
+          <TD width="20%" <P>28
+            <P></P></TD>
+          <TD width="20%" <P>bbbssbbsbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>Equal
+            <P></P></TD>
+          <TD width="20%" <P>Equal
+            <P></P></TD>
+          <TD width="20%" <P>29
+            <P></P></TD>
+          <TD width="20%" <P>29
+            <P></P></TD>
+          <TD width="20%" <P>bbbssbbssbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>&gt;
+            <P></P></TD>
+          <TD width="20%" <P>&gt;
+            <P></P></TD>
+          <TD width="20%" <P>30
+            <P></P></TD>
+          <TD width="20%" <P>30
+            <P></P></TD>
+          <TD width="20%" <P>bbsbbsbbsss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>?
+            <P></P></TD>
+          <TD width="20%" <P>?
+            <P></P></TD>
+          <TD width="20%" <P>31
+            <P></P></TD>
+          <TD width="20%" <P>31
+            <P></P></TD>
+          <TD width="20%" <P>bbsbbsssbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>@
+            <P></P></TD>
+          <TD width="20%" <P>@
+            <P></P></TD>
+          <TD width="20%" <P>32
+            <P></P></TD>
+          <TD width="20%" <P>32
+            <P></P></TD>
+          <TD width="20%" <P>bbsssbbsbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>A
+            <P></P></TD>
+          <TD width="20%" <P>A
+            <P></P></TD>
+          <TD width="20%" <P>33
+            <P></P></TD>
+          <TD width="20%" <P>33
+            <P></P></TD>
+          <TD width="20%" <P>bsbsssbbsss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>B
+            <P></P></TD>
+          <TD width="20%" <P>B
+            <P></P></TD>
+          <TD width="20%" <P>34
+            <P></P></TD>
+          <TD width="20%" <P>34
+            <P></P></TD>
+          <TD width="20%" <P>bsssbsbbsss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>C
+            <P></P></TD>
+          <TD width="20%" <P>C
+            <P></P></TD>
+          <TD width="20%" <P>35
+            <P></P></TD>
+          <TD width="20%" <P>35
+            <P></P></TD>
+          <TD width="20%" <P>bsssbsssbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>D
+            <P></P></TD>
+          <TD width="20%" <P>D
+            <P></P></TD>
+          <TD width="20%" <P>36
+            <P></P></TD>
+          <TD width="20%" <P>36
+            <P></P></TD>
+          <TD width="20%" <P>bsbbsssbsss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>E
+            <P></P></TD>
+          <TD width="20%" <P>E
+            <P></P></TD>
+          <TD width="20%" <P>37
+            <P></P></TD>
+          <TD width="20%" <P>37
+            <P></P></TD>
+          <TD width="20%" <P>bsssbbsbsss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>F
+            <P></P></TD>
+          <TD width="20%" <P>F
+            <P></P></TD>
+          <TD width="20%" <P>38
+            <P></P></TD>
+          <TD width="20%" <P>38
+            <P></P></TD>
+          <TD width="20%" <P>bsssbbsssbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>G
+            <P></P></TD>
+          <TD width="20%" <P>G
+            <P></P></TD>
+          <TD width="20%" <P>39
+            <P></P></TD>
+          <TD width="20%" <P>39
+            <P></P></TD>
+          <TD width="20%" <P>bbsbsssbsss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>H
+            <P></P></TD>
+          <TD width="20%" <P>H
+            <P></P></TD>
+          <TD width="20%" <P>40
+            <P></P></TD>
+          <TD width="20%" <P>40
+            <P></P></TD>
+          <TD width="20%" <P>bbsssbsbsss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>I
+            <P></P></TD>
+          <TD width="20%" <P>I
+            <P></P></TD>
+          <TD width="20%" <P>41
+            <P></P></TD>
+          <TD width="20%" <P>41
+            <P></P></TD>
+          <TD width="20%" <P>bbsssbsssbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>J
+            <P></P></TD>
+          <TD width="20%" <P>J
+            <P></P></TD>
+          <TD width="20%" <P>42
+            <P></P></TD>
+          <TD width="20%" <P>42
+            <P></P></TD>
+          <TD width="20%" <P>bsbbsbbbsss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>K
+            <P></P></TD>
+          <TD width="20%" <P>K
+            <P></P></TD>
+          <TD width="20%" <P>43
+            <P></P></TD>
+          <TD width="20%" <P>43
+            <P></P></TD>
+          <TD width="20%" <P>bsbbsssbbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>L
+            <P></P></TD>
+          <TD width="20%" <P>L
+            <P></P></TD>
+          <TD width="20%" <P>44
+            <P></P></TD>
+          <TD width="20%" <P>44
+            <P></P></TD>
+          <TD width="20%" <P>bsssbbsbbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>M
+            <P></P></TD>
+          <TD width="20%" <P>M
+            <P></P></TD>
+          <TD width="20%" <P>45
+            <P></P></TD>
+          <TD width="20%" <P>45
+            <P></P></TD>
+          <TD width="20%" <P>bsbbbsbbsss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>N
+            <P></P></TD>
+          <TD width="20%" <P>N
+            <P></P></TD>
+          <TD width="20%" <P>46
+            <P></P></TD>
+          <TD width="20%" <P>46
+            <P></P></TD>
+          <TD width="20%" <P>bsbbbsssbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>O
+            <P></P></TD>
+          <TD width="20%" <P>O
+            <P></P></TD>
+          <TD width="20%" <P>47
+            <P></P></TD>
+          <TD width="20%" <P>47
+            <P></P></TD>
+          <TD width="20%" <P>bsssbbbsbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>P
+            <P></P></TD>
+          <TD width="20%" <P>P
+            <P></P></TD>
+          <TD width="20%" <P>48
+            <P></P></TD>
+          <TD width="20%" <P>48
+            <P></P></TD>
+          <TD width="20%" <P>bbbsbbbsbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>Q
+            <P></P></TD>
+          <TD width="20%" <P>Q
+            <P></P></TD>
+          <TD width="20%" <P>49
+            <P></P></TD>
+          <TD width="20%" <P>49
+            <P></P></TD>
+          <TD width="20%" <P>bbsbsssbbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>R
+            <P></P></TD>
+          <TD width="20%" <P>R
+            <P></P></TD>
+          <TD width="20%" <P>50
+            <P></P></TD>
+          <TD width="20%" <P>50
+            <P></P></TD>
+          <TD width="20%" <P>bbsssbsbbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>S
+            <P></P></TD>
+          <TD width="20%" <P>S
+            <P></P></TD>
+          <TD width="20%" <P>51
+            <P></P></TD>
+          <TD width="20%" <P>51
+            <P></P></TD>
+          <TD width="20%" <P>bbsbbbsbsss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>T
+            <P></P></TD>
+          <TD width="20%" <P>T
+            <P></P></TD>
+          <TD width="20%" <P>52
+            <P></P></TD>
+          <TD width="20%" <P>52
+            <P></P></TD>
+          <TD width="20%" <P>bbsbbbsssbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>U
+            <P></P></TD>
+          <TD width="20%" <P>U
+            <P></P></TD>
+          <TD width="20%" <P>53
+            <P></P></TD>
+          <TD width="20%" <P>53
+            <P></P></TD>
+          <TD width="20%" <P>bbsbbbsbbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>V
+            <P></P></TD>
+          <TD width="20%" <P>V
+            <P></P></TD>
+          <TD width="20%" <P>54
+            <P></P></TD>
+          <TD width="20%" <P>54
+            <P></P></TD>
+          <TD width="20%" <P>bbbsbsbbsss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>W
+            <P></P></TD>
+          <TD width="20%" <P>W
+            <P></P></TD>
+          <TD width="20%" <P>55
+            <P></P></TD>
+          <TD width="20%" <P>55
+            <P></P></TD>
+          <TD width="20%" <P>bbbsbsssbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>X
+            <P></P></TD>
+          <TD width="20%" <P>X
+            <P></P></TD>
+          <TD width="20%" <P>56
+            <P></P></TD>
+          <TD width="20%" <P>56
+            <P></P></TD>
+          <TD width="20%" <P>bbbsssbsbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>Y
+            <P></P></TD>
+          <TD width="20%" <P>Y
+            <P></P></TD>
+          <TD width="20%" <P>57
+            <P></P></TD>
+          <TD width="20%" <P>57
+            <P></P></TD>
+          <TD width="20%" <P>bbbsbbsbsss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>Z
+            <P></P></TD>
+          <TD width="20%" <P>Z
+            <P></P></TD>
+          <TD width="20%" <P>58
+            <P></P></TD>
+          <TD width="20%" <P>58
+            <P></P></TD>
+          <TD width="20%" <P>bbbsbbsssbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>[
+            <P></P></TD>
+          <TD width="20%" <P>[
+            <P></P></TD>
+          <TD width="20%" <P>59
+            <P></P></TD>
+          <TD width="20%" <P>59
+            <P></P></TD>
+          <TD width="20%" <P>bbbsssbbsbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>\
+            <P></P></TD>
+          <TD width="20%" <P>\
+            <P></P></TD>
+          <TD width="20%" <P>60
+            <P></P></TD>
+          <TD width="20%" <P>60
+            <P></P></TD>
+          <TD width="20%" <P>bbbsbbbbsbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>]
+            <P></P></TD>
+          <TD width="20%" <P>]
+            <P></P></TD>
+          <TD width="20%" <P>61
+            <P></P></TD>
+          <TD width="20%" <P>61
+            <P></P></TD>
+          <TD width="20%" <P>bbssbssssbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>^
+            <P></P></TD>
+          <TD width="20%" <P>^
+            <P></P></TD>
+          <TD width="20%" <P>62
+            <P></P></TD>
+          <TD width="20%" <P>62
+            <P></P></TD>
+          <TD width="20%" <P>bbbbsssbsbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>_
+            <P></P></TD>
+          <TD width="20%" <P>_
+            <P></P></TD>
+          <TD width="20%" <P>63
+            <P></P></TD>
+          <TD width="20%" <P>63
+            <P></P></TD>
+          <TD width="20%" <P>bsbssbbssss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>NUL
+            <P></P></TD>
+          <TD width="20%" <P>`
+            <P></P></TD>
+          <TD width="20%" <P>64
+            <P></P></TD>
+          <TD width="20%" <P>64
+            <P></P></TD>
+          <TD width="20%" <P>bsbssssbbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>SOH
+            <P></P></TD>
+          <TD width="20%" <P>a
+            <P></P></TD>
+          <TD width="20%" <P>65
+            <P></P></TD>
+          <TD width="20%" <P>65
+            <P></P></TD>
+          <TD width="20%" <P>bssbsbbssss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>STX
+            <P></P></TD>
+          <TD width="20%" <P>b
+            <P></P></TD>
+          <TD width="20%" <P>66
+            <P></P></TD>
+          <TD width="20%" <P>66
+            <P></P></TD>
+          <TD width="20%" <P>bssbssssbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>ETX
+            <P></P></TD>
+          <TD width="20%" <P>c
+            <P></P></TD>
+          <TD width="20%" <P>67
+            <P></P></TD>
+          <TD width="20%" <P>67
+            <P></P></TD>
+          <TD width="20%" <P>bssssbsbbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>EOT
+            <P></P></TD>
+          <TD width="20%" <P>d
+            <P></P></TD>
+          <TD width="20%" <P>68
+            <P></P></TD>
+          <TD width="20%" <P>68
+            <P></P></TD>
+          <TD width="20%" <P>bssssbssbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>ENQ
+            <P></P></TD>
+          <TD width="20%" <P>e
+            <P></P></TD>
+          <TD width="20%" <P>69
+            <P></P></TD>
+          <TD width="20%" <P>69
+            <P></P></TD>
+          <TD width="20%" <P>bsbbssbssss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>ACK
+            <P></P></TD>
+          <TD width="20%" <P>f
+            <P></P></TD>
+          <TD width="20%" <P>70
+            <P></P></TD>
+          <TD width="20%" <P>70
+            <P></P></TD>
+          <TD width="20%" <P>bsbbssssbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>BEL
+            <P></P></TD>
+          <TD width="20%" <P>g
+            <P></P></TD>
+          <TD width="20%" <P>71
+            <P></P></TD>
+          <TD width="20%" <P>71
+            <P></P></TD>
+          <TD width="20%" <P>bssbbsbssss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>BS
+            <P></P></TD>
+          <TD width="20%" <P>h
+            <P></P></TD>
+          <TD width="20%" <P>72
+            <P></P></TD>
+          <TD width="20%" <P>72
+            <P></P></TD>
+          <TD width="20%" <P>bssbbssssbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>HT
+            <P></P></TD>
+          <TD width="20%" <P>i
+            <P></P></TD>
+          <TD width="20%" <P>73
+            <P></P></TD>
+          <TD width="20%" <P>73
+            <P></P></TD>
+          <TD width="20%" <P>bssssbbsbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>LF
+            <P></P></TD>
+          <TD width="20%" <P>j
+            <P></P></TD>
+          <TD width="20%" <P>74
+            <P></P></TD>
+          <TD width="20%" <P>74
+            <P></P></TD>
+          <TD width="20%" <P>bssssbbssbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>VT
+            <P></P></TD>
+          <TD width="20%" <P>k
+            <P></P></TD>
+          <TD width="20%" <P>75
+            <P></P></TD>
+          <TD width="20%" <P>75
+            <P></P></TD>
+          <TD width="20%" <P>bbssssbssbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>FF
+            <P></P></TD>
+          <TD width="20%" <P>l
+            <P></P></TD>
+          <TD width="20%" <P>76
+            <P></P></TD>
+          <TD width="20%" <P>76
+            <P></P></TD>
+          <TD width="20%" <P>bbssbsbssss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>CR
+            <P></P></TD>
+          <TD width="20%" <P>m
+            <P></P></TD>
+          <TD width="20%" <P>77
+            <P></P></TD>
+          <TD width="20%" <P>77
+            <P></P></TD>
+          <TD width="20%" <P>bbbbsbbbsbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>SO
+            <P></P></TD>
+          <TD width="20%" <P>n
+            <P></P></TD>
+          <TD width="20%" <P>78
+            <P></P></TD>
+          <TD width="20%" <P>78
+            <P></P></TD>
+          <TD width="20%" <P>bbssssbsbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>SI
+            <P></P></TD>
+          <TD width="20%" <P>o
+            <P></P></TD>
+          <TD width="20%" <P>79
+            <P></P></TD>
+          <TD width="20%" <P>79
+            <P></P></TD>
+          <TD width="20%" <P>bsssbbbbsbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>DLE
+            <P></P></TD>
+          <TD width="20%" <P>p
+            <P></P></TD>
+          <TD width="20%" <P>80
+            <P></P></TD>
+          <TD width="20%" <P>80
+            <P></P></TD>
+          <TD width="20%" <P>bsbssbbbbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>DC1
+            <P></P></TD>
+          <TD width="20%" <P>q
+            <P></P></TD>
+          <TD width="20%" <P>81
+            <P></P></TD>
+          <TD width="20%" <P>81
+            <P></P></TD>
+          <TD width="20%" <P>bssbsbbbbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>DC2
+            <P></P></TD>
+          <TD width="20%" <P>r
+            <P></P></TD>
+          <TD width="20%" <P>82
+            <P></P></TD>
+          <TD width="20%" <P>82
+            <P></P></TD>
+          <TD width="20%" <P>bssbssbbbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>DC3
+            <P></P></TD>
+          <TD width="20%" <P>s
+            <P></P></TD>
+          <TD width="20%" <P>83
+            <P></P></TD>
+          <TD width="20%" <P>83
+            <P></P></TD>
+          <TD width="20%" <P>bsbbbbssbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>DC4
+            <P></P></TD>
+          <TD width="20%" <P>t
+            <P></P></TD>
+          <TD width="20%" <P>84
+            <P></P></TD>
+          <TD width="20%" <P>84
+            <P></P></TD>
+          <TD width="20%" <P>bssbbbbsbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>NAK
+            <P></P></TD>
+          <TD width="20%" <P>u
+            <P></P></TD>
+          <TD width="20%" <P>85
+            <P></P></TD>
+          <TD width="20%" <P>85
+            <P></P></TD>
+          <TD width="20%" <P>bssbbbbssbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>SYN
+            <P></P></TD>
+          <TD width="20%" <P>v
+            <P></P></TD>
+          <TD width="20%" <P>86
+            <P></P></TD>
+          <TD width="20%" <P>86
+            <P></P></TD>
+          <TD width="20%" <P>bbbbsbssbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>ETB
+            <P></P></TD>
+          <TD width="20%" <P>w
+            <P></P></TD>
+          <TD width="20%" <P>87
+            <P></P></TD>
+          <TD width="20%" <P>87
+            <P></P></TD>
+          <TD width="20%" <P>bbbbssbsbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>CAN
+            <P></P></TD>
+          <TD width="20%" <P>x
+            <P></P></TD>
+          <TD width="20%" <P>88
+            <P></P></TD>
+          <TD width="20%" <P>88
+            <P></P></TD>
+          <TD width="20%" <P>bbbbssbssbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>EM
+            <P></P></TD>
+          <TD width="20%" <P>y
+            <P></P></TD>
+          <TD width="20%" <P>89
+            <P></P></TD>
+          <TD width="20%" <P>89
+            <P></P></TD>
+          <TD width="20%" <P>bbsbbsbbbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>SUB
+            <P></P></TD>
+          <TD width="20%" <P>z
+            <P></P></TD>
+          <TD width="20%" <P>90
+            <P></P></TD>
+          <TD width="20%" <P>90
+            <P></P></TD>
+          <TD width="20%" <P>bbsbbbbsbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>ESC
+            <P></P></TD>
+          <TD width="20%" <P>{
+            <P></P></TD>
+          <TD width="20%" <P>91
+            <P></P></TD>
+          <TD width="20%" <P>91
+            <P></P></TD>
+          <TD width="20%" <P>bbbbsbbsbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>FS
+            <P></P></TD>
+          <TD width="20%" <P>|
+            <P></P></TD>
+          <TD width="20%" <P>92
+            <P></P></TD>
+          <TD width="20%" <P>92
+            <P></P></TD>
+          <TD width="20%" <P>bsbsbbbbsss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>GS
+            <P></P></TD>
+          <TD width="20%" <P>}
+            <P></P></TD>
+          <TD width="20%" <P>93
+            <P></P></TD>
+          <TD width="20%" <P>93
+            <P></P></TD>
+          <TD width="20%" <P>bsbsssbbbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>RS
+            <P></P></TD>
+          <TD width="20%" <P>~
+            <P></P></TD>
+          <TD width="20%" <P>94
+            <P></P></TD>
+          <TD width="20%" <P>94
+            <P></P></TD>
+          <TD width="20%" <P>bsssbsbbbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>US
+            <P></P></TD>
+          <TD width="20%" <P>DEL
+            <P></P></TD>
+          <TD width="20%" <P>95
+            <P></P></TD>
+          <TD width="20%" <P>95
+            <P></P></TD>
+          <TD width="20%" <P>bsbbbbsbsss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>FNC3
+            <P></P></TD>
+          <TD width="20%" <P>FNC3
+            <P></P></TD>
+          <TD width="20%" <P>96
+            <P></P></TD>
+          <TD width="20%" <P>96
+            <P></P></TD>
+          <TD width="20%" <P>bsbbbbsssbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>FNC2
+            <P></P></TD>
+          <TD width="20%" <P>FNC2
+            <P></P></TD>
+          <TD width="20%" <P>97
+            <P></P></TD>
+          <TD width="20%" <P>97
+            <P></P></TD>
+          <TD width="20%" <P>bbbbsbsbsss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>Shift
+            <P></P></TD>
+          <TD width="20%" <P>Shift
+            <P></P></TD>
+          <TD width="20%" <P>98
+            <P></P></TD>
+          <TD width="20%" <P>98
+            <P></P></TD>
+          <TD width="20%" <P>bbbbsbsssbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>Switch Code C
+            <P></P></TD>
+          <TD width="20%" <P>Switch Code C
+            <P></P></TD>
+          <TD width="20%" <P>99
+            <P></P></TD>
+          <TD width="20%" <P>99
+            <P></P></TD>
+          <TD width="20%" <P>bsbbbsbbbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>Switch Code B
+            <P></P></TD>
+          <TD width="20%" <P>FNC4
+            <P></P></TD>
+          <TD width="20%" <P>Switch Code B
+            <P></P></TD>
+          <TD width="20%" <P>100
+            <P></P></TD>
+          <TD width="20%" <P>bsbbbbsbbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>FNC4
+            <P></P></TD>
+          <TD width="20%" <P>Switch Code A
+            <P></P></TD>
+          <TD width="20%" <P>Switch Code A
+            <P></P></TD>
+          <TD width="20%" <P>101
+            <P></P></TD>
+          <TD width="20%" <P>bbbsbsbbbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>FNC1
+            <P></P></TD>
+          <TD width="20%" <P>FNC1
+            <P></P></TD>
+          <TD width="20%" <P>FNC1
+            <P></P></TD>
+          <TD width="20%" <P>102
+            <P></P></TD>
+          <TD width="20%" <P>bbbbsbsbbbs
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>START Code A
+            <P></P></TD>
+          <TD width="20%" <P>START Code A
+            <P></P></TD>
+          <TD width="20%" <P>START Code A
+            <P></P></TD>
+          <TD width="20%" <P>103
+            <P></P></TD>
+          <TD width="20%" <P>bbsbsbbbbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>START Code B
+            <P></P></TD>
+          <TD width="20%" <P>START Code B
+            <P></P></TD>
+          <TD width="20%" <P>START Code B
+            <P></P></TD>
+          <TD width="20%" <P>104
+            <P></P></TD>
+          <TD width="20%" <P>bbsbssbssss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>START Code C
+            <P></P></TD>
+          <TD width="20%" <P>START Code C
+            <P></P></TD>
+          <TD width="20%" <P>START Code C
+            <P></P></TD>
+          <TD width="20%" <P>105
+            <P></P></TD>
+          <TD width="20%" <P>bbsbssbbbss
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="20%" <P>STOP
+            <P></P></TD>
+          <TD width="20%" <P>STOP
+            <P></P></TD>
+          <TD width="20%" <P>STOP
+            <P></P></TD>
+          <TD width="20%" <P>106
+            <P></P></TD>
+          <TD width="20%" <P>bbsssbbbsbsbb
+            <P></P></TD></TR></TBODY></TABLE>
+      <P>Each Code 128 barcode has a check digit that immediately precedes the 
+      stop character. The check digit is a weighted sum of the data characters, 
+      modulus 103. The data characters are weight from left to right by the 
+      infinite sequence {1,2,3,...} An example of the check digit calculations 
+      is shown below, using the message "DATA".</P>
+      <TABLE style="PAGE-BREAK-BEFORE: always" cellSpacing=0 cellPadding=0 
+      width="100%" border=0>
+        <COLGROUP>
+        <COL width=37>
+        <COL width=37>
+        <COL width=37>
+        <COL width=37>
+        <COL width=37>
+        <COL width=37>
+        <COL width=37>
+        <TBODY>
+        <TR vAlign=top>
+          <TD width="14%" <P>Start A
+            <P></P></TD>
+          <TD width="14%" <P>D
+            <P></P></TD>
+          <TD width="14%" <P>A
+            <P></P></TD>
+          <TD width="14%" <P>T
+            <P></P></TD>
+          <TD width="14%" <P>A
+            <P></P></TD>
+          <TD width="14%" <P>Check Digit
+            <P></P></TD>
+          <TD width="14%" <P>Stop
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="14%" <P><BR>
+            <P></P></TD>
+          <TD width="14%" <P>36
+            <P></P></TD>
+          <TD width="14%" <P>33
+            <P></P></TD>
+          <TD width="14%" <P>52
+            <P></P></TD>
+          <TD width="14%" <P>33
+            <P></P></TD>
+          <TD width="14%" <P><BR>
+            <P></P></TD>
+          <TD width="14%" <P><BR>
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="14%" <P><BR>
+            <P></P></TD>
+          <TD width="14%" <P>1
+            <P></P></TD>
+          <TD width="14%" <P>2
+            <P></P></TD>
+          <TD width="14%" <P>3
+            <P></P></TD>
+          <TD width="14%" <P>4
+            <P></P></TD>
+          <TD width="14%" <P><BR>
+            <P></P></TD>
+          <TD width="14%" <P><BR>
+            <P></P></TD></TR></TBODY></TABLE>
+      <P>To calculate the check digit, first find the sum of products: 
+      (36*1)+(33*2)+(52*3)+(33*4) = 390. Divide 390 by 103 to get 3 with a 
+      remainder of 81. The value of the check digit is 81 which corresponds to 
+      the ASCII character DC1. A picture of the entire barcode is shown 
+      below.</P>
+      <P><IMG height=260 
+      src="Barcode5.jpg" 
+      width=400 border=0 name=Graphic1></P>
+      <P>Note that the barcode reader uses the check digits to decode the 
+      barcode, but does not transmit them.</P>
+      <H2>  -Cheers Joy</H2>
+      <H2>  &nbsp;</H2>
+      <H2>      &nbsp;</H2>
+      <H2> &nbsp;</H2>
+      <P>
+      <P>&nbsp;</P>
+      <P>&nbsp;</P>
+      <P>&nbsp;</P>
+      <P>&nbsp;</P>
+      <P>&nbsp;</P><BR></TD></TR></TBODY></TABLE>
+<SCRIPT language=JavaScript>
+var Selected = "";
+var AdTime = new Date();
+document.writeln("<iframe name=AdFrame width=0 height=0 frameborder=0></IFRAME>");
+
+function SwitchMessage(elm)
+{
+
+	var now = new Date();
+	if (Number(now.getTime() - AdTime.getTime()) > Number(5000))
+	{
+		AdTime = now;
+		var loc = window.frames["AdFrame"];
+		if (loc) loc = loc.document;
+		if (loc) loc = loc.location;
+		if (loc) loc.replace('/script/comments/fetchAd.asp');
+	}
+	
+	var elmref;
+	if (Selected != "")
+	{
+		elmref = eval("document.getElementById('" + Selected + "_h1')");
+		if (elmref) elmref.style.display = 'none';
+		elmref = eval("document.getElementById('" + Selected + "_h0')");
+		if (elmref) elmref.bgColor = '#FEF9E7';
+	}
+	if (Selected != elm.name) 
+	{
+		Selected = elm.name;
+		elmref = eval("document.getElementById('" + Selected + "_h1')");
+		if (elmref) 
+		{
+			if (elmref.style.display=='none') elmref.style.display='';
+			else elmref.style.display = 'none';
+		}
+		elmref = eval("document.getElementById('" + Selected + "_h0')");
+		if (elmref) 
+			elmref.bgColor = '#99CCFF';
+	}
+	else
+		Selected="";
+		
+	window.location = "#xx" + Selected + "xx";
+
+	return false;
+}
+
+</SCRIPT>
+
+<SCRIPT language=javascript event=onclick for=DynMessLink>
+return SwitchMessage(this);
+</SCRIPT>
+<BR>
+<CENTER>&nbsp;</CENTER></BODY></HTML>

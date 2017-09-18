@@ -1,0 +1,271 @@
+<HTML><HEAD><TITLE> Drawing Barcodes in  Code 39 </TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<LINK 
+href="global.css" 
+type=text/css rel=stylesheet>
+<META content="MSHTML 5.50.4807.2300" name=GENERATOR></HEAD>
+<BODY text=black vLink=purple aLink=red link=blue bgColor=white leftMargin=3 
+topMargin=3>
+<TABLE cellSpacing=0 cellPadding=1 border=0 style="WIDTH: 762px; HEIGHT: 3547px">
+  <TBODY>
+  <TR vAlign=top>
+    <TD vAlign=top bgColor=#fbedbb rowSpan=2></TD>
+    
+    <TD align=right width="100%" bgColor=white>
+      <DIV align=right>&nbsp;</DIV></TD></TR>
+  <TR>
+    <TD vAlign=top width="100%"><!-- Article Starts -->
+      <H2 align=center>Introduction</H2>
+      <P>         A recent project 
+      at work required that I write out barcode characters and read&nbsp;them. This 
+      experience inspired me to start a side project writing some code that renders a 
+      barcode on the Windows screen, given the proper input. This is the 
+      result of that project.</P>
+      <H2 align=center>Code 39 basics</H2>
+      <P>This first article is about drawing Code 39 barcodes on the Windows 
+      screen. Before I start discussing the code, we'll need to know some basic 
+      facts about the Code 39 barcode symbology. Code 39 was the first 
+      alphanumeric symbology developed, and is widely used in industrial 
+      settings. Code 39 has two different element widths, wide and narrow, which 
+      are usually specified by giving the narrow width and the narrow/wide 
+      ratio. Each Code 39 character has five bars and four spaces for a total of 
+      nine elements. Of the nine elements, three are wide and six are narrow, 
+      leading to the name Code 39 (3 of 9). Each character is followed by an 
+      inter-character gap, usually equal to the width of a narrow element. The 
+      44 characters in the Code 39 symbology are listed below:</P>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <COLGROUP>
+        <COL width=20>
+        <COL width=236>
+        <TBODY>
+        <TR vAlign=top>
+          <TD width="12%" <P>Character
+            <P></P></TD>
+          <TD width="88%" <P>Pattern (bsbsbsbsb)
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD align=left width="12%" <P>1
+            <P></P></TD>
+          <TD width="88%" <P>wnnwnnnnw</TD></TR>
+        <TR vAlign=top>
+          <TD align=left width="12%" <P>2
+            <P></P></TD>
+          <TD width="88%" <P>nnwwnnnnw
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD align=left width="12%" <P>3
+            <P></P></TD>
+          <TD width="88%" <P>wnwwnnnnn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD align=left width="12%" <P>4
+            <P></P></TD>
+          <TD width="88%" <P>nnnwwnnnw
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD align=left width="12%" <P>5
+            <P></P></TD>
+          <TD width="88%" <P>wnnwwnnnn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD align=left width="12%" <P>6
+            <P></P></TD>
+          <TD width="88%" <P>nnwwwnnnn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD align=left width="12%" <P>7
+            <P></P></TD>
+          <TD width="88%" <P>nnnwnnwnw
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD align=left width="12%" <P>8
+            <P></P></TD>
+          <TD width="88%" <P>wnnwnnwnn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD align=left width="12%" <P>9
+            <P></P></TD>
+          <TD width="88%" <P>nnwwnnwnn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD align=left width="12%" <P>0
+            <P></P></TD>
+          <TD width="88%" <P>nnnwwnwnn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>A
+            <P></P></TD>
+          <TD width="88%" <P>wnnnnwnnw
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>B
+            <P></P></TD>
+          <TD width="88%" <P>nnwnnwnnw
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>C
+            <P></P></TD>
+          <TD width="88%" <P>wnwnnwnnn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>D
+            <P></P></TD>
+          <TD width="88%" <P>nnnnwwnnw
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>E
+            <P></P></TD>
+          <TD width="88%" <P>wnnnwwnnn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>F
+            <P></P></TD>
+          <TD width="88%" <P>nnwnwwnnn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>G
+            <P></P></TD>
+          <TD width="88%" <P>nnnnnwwnw
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>H
+            <P></P></TD>
+          <TD width="88%" <P>wnnnnwwnn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>I
+            <P></P></TD>
+          <TD width="88%" <P>nnwnnwwnn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>J
+            <P></P></TD>
+          <TD width="88%" <P>nnnnwwwnn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>K
+            <P></P></TD>
+          <TD width="88%" <P>wnnnnnnww
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>L
+            <P></P></TD>
+          <TD width="88%" <P>nnwnnnnww
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>M
+            <P></P></TD>
+          <TD width="88%" <P>wnwnnnnwn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>N
+            <P></P></TD>
+          <TD width="88%" <P>nnnnwnnww
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>O
+            <P></P></TD>
+          <TD width="88%" <P>wnnnwnnwn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>P
+            <P></P></TD>
+          <TD width="88%" <P>nnwnwnnwn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>Q
+            <P></P></TD>
+          <TD width="88%" <P>nnnnnnwww
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>R
+            <P></P></TD>
+          <TD width="88%" <P>wnnnnnwwn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>S
+            <P></P></TD>
+          <TD width="88%" <P>nnwnnnwwn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>T
+            <P></P></TD>
+          <TD width="88%" <P>nnnnwnwwn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>U
+            <P></P></TD>
+          <TD width="88%" <P>wwnnnnnnw
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>V
+            <P></P></TD>
+          <TD width="88%" <P>nwwnnnnnw
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>W
+            <P></P></TD>
+          <TD width="88%" <P>wwwnnnnnn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>X
+            <P></P></TD>
+          <TD width="88%" <P>nwnnwnnnw
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>Y
+            <P></P></TD>
+          <TD width="88%" <P>wwnnwnnnn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>Z
+            <P></P></TD>
+          <TD width="88%" <P>nwwnwnnnn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>-
+            <P></P></TD>
+          <TD width="88%" <P>nwnnnnwnw
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>.
+            <P></P></TD>
+          <TD width="88%" <P>wwnnnnwnn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>SPACE
+            <P></P></TD>
+          <TD width="88%" <P>nwwnnnwnn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>*
+            <P></P></TD>
+          <TD width="88%" <P>nwnnwnwnn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>$
+            <P></P></TD>
+          <TD width="88%" <P>nwnwnwnnn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>/
+            <P></P></TD>
+          <TD width="88%" <P>nwnwnnnwn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>+
+            <P></P></TD>
+          <TD width="88%" <P>nwnnnwnwn
+            <P></P></TD></TR>
+        <TR vAlign=top>
+          <TD width="12%" <P>%
+            <P></P></TD>
+          <TD width="88%" <P>nnnwnwnwn
+            <P></P></TD></TR></TBODY></TABLE>
+      <P>A Code 39 message begins and ends with an asterisk, which serves as 
+      this symbologies start/stop code. A sample Code 39 message “DATA” is 
+      pictured below complete with start and stop codes.</P>
+      <P><IMG style="WIDTH: 
+      388px; HEIGHT: 231px" height          
+      =260 src="Barcode1.jpg" width=400 border=0></P></TD>
+</TR></TBODY></TABLE></BODY></HTML>

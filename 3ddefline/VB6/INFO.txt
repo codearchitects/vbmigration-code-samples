@@ -1,0 +1,119 @@
+
+ .----------------------------------------------------------------------------.
+ |                                                                            |
+ |  http://www.it-lang-vb.net      (sito comune di it.comp.lang.visual-basic) |
+ |                                                                            |
+ '----------------------------------------------------------------------------'
+ .--- Documento INFO.TXT REV1.00----------------------------------------------.
+ |                                                                            |
+ |   Data del documento     [09/01/2003]                                      |
+ |                                                                            |
+ |   Questo documento è compilato da chi invia il materiale in oggetto al     |
+ |   sito comune.                                                             |
+ |   Il sito comune non è responsabile in alcun modo per quanto dichiarato    |
+ |   in questo documento.                                                     |
+ |   Questo documento è puramente indicativo e NON offre alcuna garanzia      |
+ |   sulla correttezza delle informazioni in esso contenute.                  |
+ |   Per eventuali inesattezze riscontrate si prega di comunicare le stesse   |
+ |   all'autore, il quale a sua volta invierà le correzioni al sito comune.   |
+ |                                                                            |
+ '----------------------------------------------------------------------------'
+ .--- Materiale --------------------------------------------------------------.
+ |                                                                            |
+ |   Nome                               [3Ddefline                        ]   |
+ |   Versione                           [1.1       ]                          |
+ |   Descrizione                                                              |
+ |   ,....................................................................    |
+ |   :Questo programma permette di studiare le funzioni in 3D del tipo	  :   |
+ |   :z=f(x,y) (da immettere in una textbox); il grafico può essere mosso :   |
+ |   :e ruotato nello spazio. La funzione da studiare può essere immessa  :   |
+ |   :in una TextBox; può inoltre essere cambiata la risoluzione e l'area :   |
+ |   :di disegno della funzione.                                          :   |
+ |   :                                                                    :   |
+ |   '....................................................................'   |
+ |                                                                            |
+ |   Licenza    [X] GPL   [ ] Altro: file di licenza [                    ]   |
+ |                                                                            |
+ '----------------------------------------------------------------------------'
+ .--- Prerequisiti -----------------------------------------------------------.
+ |                                                                            |
+ |   ,....................................................................    |
+ |   :                                                                    :   |
+ |   :  Sistema operativo*     [i] Win95   [i] WinNT 4                    :   |
+ |   :                         [i] Win98   [i] WinNT 5 (2000)             :   |
+ |   :                         [i] WinME   [X] WinXP                      :   |
+ |   :                                                                    :   |
+ |   :  Aggiunte necessarie*   [ ] Internet Explorer   ver. [       ]     :   |
+ |   :                         [ ] Office 97                              :   |
+ |   :                         [ ] Office 2000                            :   |
+ |   :                         [ ] Office XP                              :   |
+ |   :                         [ ] ADO (MDAC)          ver. [       ]     :   |
+ |   :                         [ ] DAO (JET)           ver. [       ]     :   |
+ |   :                         [ ] Altro                                  :   |
+ |   :                             ____________________________________   :   |
+ |   :                             ____________________________________   :   |
+ |   :                             ____________________________________   :   |
+ |   :                             ____________________________________   :   |
+ |   :                                                                    :   |
+ |   :                                                                    :   |
+ |   :  Sistema di sviluppo*   [ ] VB3     [ ] VB 4/16                    :   |
+ |   :                         [ ] VB4/32  [ ] VB5                        :   |
+ |   :                         [X] VB6     [ ] VB.NET                     :   |
+ |   :                                         ver. Fr.Work [         ]   :   |
+ |   :                                                                    :   |
+ |   :  Service Pack usato     [ ] SP1     [ ] SP2     [ ] SP3            :   |
+ |   :                         [ ] SP4     [X] SP5     [ ] SP6            :   |
+ |   '....................................................................'   |
+ |                                                                            |
+ |   (*)                                                                      |
+ |         - le voci contrassegnate con "i" indicano i prerequisiti           |
+ |           intenzionali (prerequisiti per i quali si intendeva sviluppare   |
+ |           il prodotto)                                                     |
+ |         - le voci contrassegnate con "x" indicano i prerequisiti           |
+ |           effettivi (prerequisiti minimi indispensabili delle macchine     |
+ |           su cui sono stati effettuati i test)                             |
+ |                                                                            |
+ '----------------------------------------------------------------------------'
+ .--- Autori -----------------------------------------------------------------.
+ |                                                                            |
+ |   Autore di questa versione                                                |
+ |                                                                            |
+ |    - Nome/NickName  (obbligatorio)   [Duccio/Duke                      ]   |
+ |    - e-mail                          [picinotti.duccio@tin.it          ]   |
+ |    - e-mail per bug-report           [picinotti.duccio@tin.it          ]   |
+ |    - web                             [http://www.catenaia.cjb.net      ]   |
+ |                                                                            |
+ |                                                                            |
+ |   Autore della versione precedente                                         |
+ |                                                                            |
+ |    - Nome/NickName  (obbligatorio)   [Duccio/Duke                      ]   |
+ |    - e-mail                          [picinotti.duccio@tin.it          ]   |
+ |    - e-mail per bug-report           [picinotti.duccio@tin.it          ]   |
+ |    - web                             [http://www.catenaia.cjb.net      ]   |
+ |                                                                            |
+ |                                                                            |
+ |   Autore della versione originale                                          |
+ |                                                                            |
+ |    - Nome/NickName  (obbligatorio)   [Duccio/Duke                      ]   |
+ |    - e-mail                          [picinotti.duccio@tin.it          ]   |
+ |    - e-mail per bug-report           [picinotti.duccio@tin.it          ]   |
+ |    - web                             [http://www.catenaia.cjb.net      ]   |
+ |                                                                            |
+ |                                                                            |
+ |   Per conoscere la lista completa degli autori consultare il file          |
+ |   HISTORY.TXT                                                              |
+ |                                                                            |
+ '----------------------------------------------------------------------------'
+ .--- Fornitore --------------------------------------------------------------.
+ |                                                                            |
+ |   Dati del fornitore (se diverso dall'autore originale)                    |
+ |                                                                            |
+ |    - Nome/NickName  (obbligatorio)   [                                 ]   |
+ |    - e-mail                          [                                 ]   |
+ |    - e-mail per bug-report           [                                 ]   |
+ |    - web                             [                                 ]   |
+ |                                                                            |
+ '----------------------------------------------------------------------------'
+ .----------------------------------------------------------------------------.
+ |  Fine del Documento                                                        |
+ '----------------------------------------------------------------------------'

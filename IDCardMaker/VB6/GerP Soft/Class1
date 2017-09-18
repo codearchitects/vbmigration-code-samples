@@ -1,0 +1,178 @@
+VERSION 1.0 CLASS
+BEGIN
+  MultiUse = -1  'True
+  Persistable = 0  'NotPersistable
+  DataBindingBehavior = 0  'vbNone
+  DataSourceBehavior  = 0  'vbNone
+  MTSTransactionMode  = 0  'NotAnMTSObject
+END
+Attribute VB_Name = "Class1"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = False
+Option Explicit
+Dim shadowx As Integer
+Dim shadowy As Integer
+Dim i As Integer
+Sub Text3D(strng As String, fnt As String, fntsize As Integer, Xval As Integer _
+, Yval As Integer, depth As Integer, Br As Integer, Bg As Integer, Bb As Integer, rood As Integer, groen As Integer, blauw As Integer)
+
+    frmshowfnt.Picture2.AutoRedraw = True
+        frmshowfnt.Picture2.FontSize = fntsize
+        
+         frmshowfnt.Picture2.Font = fnt
+          frmshowfnt.Picture2.ForeColor = RGB(Br, Bg, Bb)
+           shadowx = Xval
+           shadowy = Yval
+           For i = 0 To depth
+            frmshowfnt.Picture2.CurrentX = shadowx - i
+            frmshowfnt.Picture2.CurrentY = shadowy + i
+             If i = depth Then frmshowfnt.Picture2.ForeColor = RGB(rood, groen, blauw)
+             frmshowfnt.Picture2.Print strng
+             Next i
+             'frmshowfnt.AutoRedraw = False
+             
+
+End Sub
+Sub Text3D2(strng As String, fnt As String, fntsize As Integer, Xval As Integer _
+, Yval As Integer, depth As Integer, Br As Integer, Bg As Integer, Bb As Integer, rood As Integer, groen As Integer, blauw As Integer)
+
+    frmshowfnt.Picture2.AutoRedraw = True
+        frmshowfnt.Picture2.FontSize = fntsize
+        
+         frmshowfnt.Picture2.Font = fnt
+          frmshowfnt.Picture2.ForeColor = RGB(Br, Bg, Bb)
+           shadowx = Xval
+           shadowy = Yval
+           For i = 0 To depth
+            frmshowfnt.Picture2.CurrentX = shadowx + i
+            frmshowfnt.Picture2.CurrentY = shadowy - i
+             If i = depth Then frmshowfnt.Picture2.ForeColor = RGB(rood, groen, blauw)
+             frmshowfnt.Picture2.Print strng
+             Next i
+             'frmshowfnt.AutoRedraw = False
+             
+
+End Sub
+Sub Text3D3(strng As String, fnt As String, fntsize As Integer, Xval As Integer _
+, Yval As Integer, depth As Integer, Br As Integer, Bg As Integer, Bb As Integer, rood As Integer, groen As Integer, blauw As Integer)
+
+    frmshowfnt.Picture2.AutoRedraw = True
+        frmshowfnt.Picture2.FontSize = fntsize
+        
+         frmshowfnt.Picture2.Font = fnt
+          frmshowfnt.Picture2.ForeColor = RGB(Br, Bg, Bb)
+           shadowx = Xval
+           shadowy = Yval
+           For i = 0 To depth
+            frmshowfnt.Picture2.CurrentX = shadowx - i
+            frmshowfnt.Picture2.CurrentY = shadowy
+             If i = depth Then frmshowfnt.Picture2.ForeColor = RGB(rood, groen, blauw)
+             frmshowfnt.Picture2.Print strng
+             Next i
+             'frmshowfnt.AutoRedraw = False
+             
+
+End Sub
+Sub Text3D4(strng As String, fnt As String, fntsize As Integer, Xval As Integer _
+, Yval As Integer, depth As Integer, Br As Integer, Bg As Integer, Bb As Integer, rood As Integer, groen As Integer, blauw As Integer)
+
+    frmshowfnt.Picture2.AutoRedraw = True
+        frmshowfnt.Picture2.FontSize = fntsize
+        
+         frmshowfnt.Picture2.Font = fnt
+          frmshowfnt.Picture2.ForeColor = RGB(Br, Bg, Bb)
+           shadowx = Xval
+           shadowy = Yval
+           For i = 0 To depth
+            frmshowfnt.Picture2.CurrentX = shadowx + i
+            frmshowfnt.Picture2.CurrentY = shadowy
+             If i = depth Then frmshowfnt.Picture2.ForeColor = RGB(rood, groen, blauw)
+             frmshowfnt.Picture2.Print strng
+             Next i
+             'frmshowfnt.AutoRedraw = False
+             
+
+End Sub
+Sub Text3D5(strng As String, fnt As String, fntsize As Integer, Xval As Integer _
+, Yval As Integer, depth As Integer, Br As Integer, Bg As Integer, Bb As Integer, rood As Integer, groen As Integer, blauw As Integer)
+
+    frmshowfnt.Picture2.AutoRedraw = True
+        frmshowfnt.Picture2.FontSize = fntsize
+        
+         frmshowfnt.Picture2.Font = fnt
+          frmshowfnt.Picture2.ForeColor = RGB(Br, Bg, Bb)
+           shadowx = Xval
+           shadowy = Yval
+           For i = 0 To depth
+            frmshowfnt.Picture2.CurrentX = shadowx
+            frmshowfnt.Picture2.CurrentY = shadowy + i
+             If i = depth Then frmshowfnt.Picture2.ForeColor = RGB(rood, groen, blauw)
+             frmshowfnt.Picture2.Print strng
+             Next i
+             'frmshowfnt.AutoRedraw = False
+             
+
+End Sub
+Sub Text3D6(strng As String, fnt As String, fntsize As Integer, Xval As Integer _
+, Yval As Integer, depth As Integer, Br As Integer, Bg As Integer, Bb As Integer, rood As Integer, groen As Integer, blauw As Integer)
+
+    frmshowfnt.Picture2.AutoRedraw = True
+        frmshowfnt.Picture2.FontSize = fntsize
+        
+         frmshowfnt.Picture2.Font = fnt
+          frmshowfnt.Picture2.ForeColor = RGB(Br, Bg, Bb)
+           shadowx = Xval
+           shadowy = Yval
+           For i = 0 To depth
+            frmshowfnt.Picture2.CurrentX = shadowx
+            frmshowfnt.Picture2.CurrentY = shadowy - i
+             If i = depth Then frmshowfnt.Picture2.ForeColor = RGB(rood, groen, blauw)
+             frmshowfnt.Picture2.Print strng
+             Next i
+             'frmshowfnt.AutoRedraw = False
+             
+
+End Sub
+Sub Text3D7(strng As String, fnt As String, fntsize As Integer, Xval As Integer _
+, Yval As Integer, depth As Integer, Br As Integer, Bg As Integer, Bb As Integer, rood As Integer, groen As Integer, blauw As Integer)
+
+
+    frmshowfnt.Picture2.AutoRedraw = True
+        frmshowfnt.Picture2.FontSize = fntsize
+        
+         frmshowfnt.Picture2.Font = fnt
+          frmshowfnt.Picture2.ForeColor = RGB(Br, Bg, Bb)
+           shadowx = Xval
+           shadowy = Yval
+           For i = 0 To depth
+            frmshowfnt.Picture2.CurrentX = shadowx + i
+            frmshowfnt.Picture2.CurrentY = shadowy + i
+             If i = depth Then frmshowfnt.Picture2.ForeColor = RGB(rood, groen, blauw)
+             frmshowfnt.Picture2.Print strng
+             Next i
+             'frmshowfnt.AutoRedraw = False
+             
+
+End Sub
+Sub Text3D8(strng As String, fnt As String, fntsize As Integer, Xval As Integer _
+, Yval As Integer, depth As Integer, Br As Integer, Bg As Integer, Bb As Integer, rood As Integer, groen As Integer, blauw As Integer)
+
+    frmshowfnt.Picture2.AutoRedraw = True
+        frmshowfnt.Picture2.FontSize = fntsize
+        
+         frmshowfnt.Picture2.Font = fnt
+          frmshowfnt.Picture2.ForeColor = RGB(Br, Bg, Bb)
+           shadowx = Xval
+           shadowy = Yval
+           For i = 0 To depth
+            frmshowfnt.Picture2.CurrentX = shadowx - i
+            frmshowfnt.Picture2.CurrentY = shadowy - i
+             If i = depth Then frmshowfnt.Picture2.ForeColor = RGB(rood, groen, blauw)
+             frmshowfnt.Picture2.Print strng
+             Next i
+             'frmshowfnt.AutoRedraw = False
+             
+End Sub
+

@@ -1,0 +1,137 @@
+[Root]
+Most Recent Package=PhoneBook
+
+
+[Package|PhoneBook|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=f:\Temp\VB\PhoneBook\PhoneBook
+
+[Package|PhoneBook|Configure DAO ISAMs]
+Applicable=No
+
+[Package|PhoneBook|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|PhoneBook|Files Found]
+PhoneBook.mdb=F:\Temp\VB\PhoneBook.mdb
+
+[Package|PhoneBook|Files Released]
+
+[Package|PhoneBook|Missing Dependency Information]
+
+[Package|PhoneBook|Out-of-Date Dependency Information]
+
+[Package|PhoneBook|Files Added]
+f:\temp\vb\phonebook\phonebook.mdb=
+f:\temp\vb\phonebook\readme.txt=
+
+[Package|PhoneBook|Files Removed]
+
+[Package|PhoneBook|Files In Project]
+C:\Program Files\Common Files\SYSTEM\ADO\MSADO20.TLB=Yes
+C:\WIN98\SYSTEM\VB6STKIT.DLL=Yes
+F:\Temp\VB\PhoneBook\PhoneBook.exe=Yes
+C:\WIN98\SYSTEM\MSVBVM60.DLL=Yes
+C:\WIN98\SYSTEM\OLEAUT32.DLL=Yes
+C:\WIN98\SYSTEM\OLEPRO32.DLL=Yes
+C:\WIN98\SYSTEM\ASYCFILT.DLL=Yes
+C:\WIN98\SYSTEM\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WIN98\SYSTEM\MSCOMCTL.OCX=Yes
+C:\WIN98\SYSTEM\TABCTL32.OCX=Yes
+C:\WIN98\SYSTEM\MSBIND.DLL=Yes
+C:\WIN98\SYSTEM\MSSTDFMT.DLL=Yes
+C:\WIN98\SYSTEM\COMDLG32.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+F:\Temp\VB\PhoneBook\ReadMe.txt=Yes
+F:\Temp\VB\PhoneBook\PhoneBook.mdb=Yes
+
+[Package|PhoneBook|Configure Registry Files]
+Applicable=No
+
+[Package|PhoneBook|Configure Remote Servers]
+Applicable=No
+
+[Package|PhoneBook|Install Locations]
+G:\VB\PhoneBook\PhoneBook.exe=$(AppPath)
+C:\WINME\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINME\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINME\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINME\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINME\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+G:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Common Files\SYSTEM\ADO\MSADO20.TLB=$(WinSysPath)
+C:\WINME\SYSTEM\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINME\SYSTEM\TABCTL32.OCX=$(WinSysPath)
+C:\WINME\SYSTEM\MSBIND.DLL=$(WinSysPath)
+C:\WINME\SYSTEM\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINME\SYSTEM\MSADODC.OCX=$(WinSysPath)
+G:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+G:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WIN98\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+G:\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+G:\VB\PhoneBook\PhoneBook.mdb=$(AppPath)
+F:\Temp\VB\PhoneBook\PhoneBook.exe=$(AppPath)
+C:\WIN98\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\MSCOMCTL.OCX=$(WinSysPath)
+C:\WIN98\SYSTEM\TABCTL32.OCX=$(WinSysPath)
+C:\WIN98\SYSTEM\MSBIND.DLL=$(WinSysPath)
+C:\WIN98\SYSTEM\MSSTDFMT.DLL=$(WinSysPath)
+C:\WIN98\SYSTEM\COMDLG32.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+F:\Temp\VB\PhoneBook.mdb=$(AppPath)
+F:\Temp\VB\PhoneBook\ReadMe.txt=$(AppPath)
+F:\Temp\VB\PhoneBook\PhoneBook.mdb=$(AppPath)
+
+[Package|PhoneBook|Configure Shared Files]
+Applicable=Yes
+G:\VB\PhoneBook\PhoneBook.exe=No
+G:\VB\PhoneBook\PhoneBook.mdb=Yes
+F:\Temp\VB\PhoneBook\PhoneBook.exe=No
+F:\Temp\VB\PhoneBook.mdb=Yes
+F:\Temp\VB\PhoneBook\ReadMe.txt=No
+F:\Temp\VB\PhoneBook\PhoneBook.mdb=Yes
+
+[Package|PhoneBook|Distribution]
+Type=single
+Size=
+Title=PhoneBook
+
+[Package|PhoneBook|IconGroups]
+Group0=PhoneBook
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|PhoneBook|PhoneBook]
+Icon1=PhoneBook.exe
+Title1=PhoneBook
+StartIn1=$(AppPath)
+Key1=Icon1
+Icon2=PhoneBook.exe /S
+Title2=SystemTray
+StartIn2=$(AppPath)
+Key2=Icon3
+Icon3=ReadMe.txt
+Title3=ReadMe
+StartIn3=$(AppPath)
+Key3=Icon4
+
+[Package|PhoneBook|Package]
+PackageFolder=f:\Temp\VB\PhoneBook\PhoneBook
+ProjectFolder=F:\Temp\VB\PhoneBook
+ServerSideCab=
+File1=f:\Temp\VB\PhoneBook\PhoneBook\setup.exe
+File2=f:\Temp\VB\PhoneBook\PhoneBook\Setup.Lst
+File3=f:\Temp\VB\PhoneBook\PhoneBook\PhoneBook.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

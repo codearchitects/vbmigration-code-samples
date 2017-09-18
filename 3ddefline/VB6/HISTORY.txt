@@ -1,0 +1,56 @@
+
+ .----------------------------------------------------------------------------.
+ |                                                                            |
+ |  http://www.it-lang-vb.net      (sito comune di it.comp.lang.visual-basic) |
+ |                                                                            |
+ '----------------------------------------------------------------------------'
+ .--- Documento HISTORY.TXT REV1.01-------------------------------------------.
+ |                                                                            |
+ |   Data del documento     [09/01/2003]                                      |
+ |                                                                            |
+ |   Questo documento è compilato da chi invia il materiale in oggetto al     |
+ |   sito comune.                                                             |
+ |   Il sito comune non è responsabile in alcun modo per quanto dichiarato    |
+ |   in questo documento.                                                     |
+ |   Questo documento è puramente indicativo e NON offre alcuna garanzia      |
+ |   sulla correttezza delle informazioni in esso contenute.                  |
+ |   Per eventuali inesattezze riscontrate si prega di comunicare le stesse   |
+ |   all'autore, il quale a sua volta invierà le correzioni al sito comune.   |
+ |                                                                            |
+ '----------------------------------------------------------------------------'
+ .--- Materiale --------------------------------------------------------------.
+ |                                                                            |
+ |   Nome                               [3Ddefline                        ]   |
+ |                                                                            |
+ '----------------------------------------------------------------------------'
+ .--- Versioni ---------------------------------------------------------------.
+ |                                                                            |
+ |  L'autore originario del materiale inviato è tenuto a compilare la         |
+ |  la sezione seguente.                                                      |
+ |                                                                            |
+ |  Chi modifica il materiale in oggetto è tenuto a copiare la sezione        |
+ |  seguente, incollarla qui sotto e compilarla con le proprie informazioni   |
+ |  e con le modifiche apportate, in modo da tenere uno storico delle         |
+ |  modifiche.                                                                |
+ |                                                                            |
+ '----------------------------------------------------------------------------'
+ .----------------------------------------------------------------------------.
+ |                                                                            |
+ |   Versione [1.1      ]                                                     |
+ |                                                                            |              
+ |   Autore                                                                   |
+ |    - Nome/NickName                   [Duccio/Duke                      ]   |
+ |    - e-mail                          [picinotti.duccio@tin.it          ]   |
+ |    - e-mail per bug-report           [picinotti.duccio@tin.it          ]   |
+ |    - web                             [http://www.catenaia.cjb.net      ]   |
+ |                                                                            |
+ |   [X] Aggiornamento ...................................................    |
+ |   :Adesso la funzione da disegnare puo' essere immessa in una textbox. :   |
+ |   :                                                                    :   |
+ |   :                                                                    :   |
+ |   '....................................................................'   |
+ |                                                                            |
+ '----------------------------------------------------------------------------'
+ .----------------------------------------------------------------------------.
+ |  Fine del Documento                                                        |
+ '----------------------------------------------------------------------------'

@@ -1,0 +1,86 @@
+-------------------------------------------------------------------------------
+Sample Name: Archive Explorer
+
+Description: A browser for ZIP files that allows to look into compressed files 
+             and extract them to a folder.
+
+Download URL: http://www.Planet-Source-Code.com/vb/scripts/ShowCode.asp?txtCodeId=53174&lngWId=1
+-------------------------------------------------------------------------------
+
+IMPORTANT NOTE
+The first step to ensure that you can migrate the VB6 project to VB.NET is 
+loading the original project in the Visual Basic 6 IDE, run it to ensure that 
+it works fine, that all the required type libraries are installed, and that all 
+file paths are correct. 
+Regardless of whether you edited the source code in any way, you should save 
+the VB6 project: this save operation ensures that the .vbp file includes  
+the correct path and version of referenced type libraries. 
+After saving the project, it's usually a good idea to compile the VB6 project
+to an executable, to detect any VB6 compilation errors that would appear under 
+VB.NET as well. 
+(If you don't recompile the project VB Migration Partner will display a warning 
+when you later load the project.)
+
+
+This sample needs a pragma for managing a non-zero based array in the Cls_Zip class 
+definition.
+Insert the pragma immediatly before the array declaration as below.
+
+
+CLS_ZIP.CLS:
+
+Option Explicit
+'This class file can be used to show/extract the contents of an ZIP-archive
+
+<< ... (omitted code lines) ... >>
+
+'Flags values for ZIP-files
+Private Const ZipFlgEncrypted As Byte = 1   'bit 0 set = file is encrypted
+Private Const ZipFlgUsedMed As Byte = 6     'bit 1+2 depending on compression type
+                                            'type = 6 (imploding)
+                                            'bit 1 set = use 8k dictionary else 4k dictionary
+                                            'bit 2 set = use 3 trees else use 2 trees
+                                            'type = 8 (deflating)
+                                            'bit 2 : 1
+                                            '    0   0 = Normal (-en) compression option was used.
+                                            '    0   1 = Maximum (-exx/-ex) compression option was used
+                                            '    1   0 = Fast (-ef) compression option was used
+                                            '    1   1 = Super Fast (-es) compression option was used
+                                            'bits are undified if other methods are used
+Private Const ZipFlgExtLocHead As Byte = 8  'bit 3 set = Extended local header is used to store CRC and size
+Private Const ZipFlgRes64 As Byte = 16      'bit 4 Reserved for ZIP64
+Private Const ZipFlgPathed As Byte = 32     'bit 5 set = file is compressed pathed data
+Private Const ZipFlgEncStrong As Byte = 64  'bit 6 set = file is encrypted using strong encryption
+
+'##ZIPFileData.ArrayBounds ForceZero			<=== The VBMP ArrayBounds Pragma
+Private ZIPFileData() As CentralData_Type
+Private CRC As New Cls_CRC32
+Private Encrypt As New Cls_Encrypt
+Private Const m_Unpack_Supported As Boolean = True
+
+
+If you want you can use a pragma for changing the passing mode for some 
+method's parameters. 
+In VB6 parameters are implicit passed by reference to a method if neither ByVal
+nor ByRef keyword is specified. 
+It is unuseful passing parameters ByRef if the code in the method doesn't modify 
+them and this affects performance too.
+
+You can insert this line at the top of any file of the project (for example frmMain):
+
+'##project:UseByVal Yes
+
+Every parameter with no ByVal/ByRef specification will be migrated with a ByVal 
+passing mode (that is the default for VB.NET)
+
+
+VB Migration Partner typically delivers many warnings that are related to 
+code analysis as well as suggestions about how you can improve the original 
+VB6 code before converting it to VB.NET. 
+You can suppress these warnings by adding the following project-level pragmas 
+at the top of any of the file that make up the project:
+
+'## project:DisableMessage 0354
+'## project:DisableMessage 0364
+'## project:DisableMessage 0501
+'## project:DisableMessage 0511

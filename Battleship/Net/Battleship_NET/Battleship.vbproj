@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5511AA46-DAF3-41E8-AE16-4843E5D0B086}</ProjectGuid>
+    <DefineConstants>WIN32=True</DefineConstants>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Battleship.My.MyApplication</StartupObject>
+    <RootNamespace>Battleship</RootNamespace>
+    <AssemblyName>Battleship</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DefineConstants>WIN32=True</DefineConstants>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Battleship.xml</DocumentationFile>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>41999,42016,42017,42018,42019,42024,42030,42032,42036,42104,42105,42106,42107,42108,42109</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DefineConstants>WIN32=True</DefineConstants>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Battleship.xml</DocumentationFile>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>41999,42016,42017,42018,42019,42024,42030,42032,42036,42104,42105,42106,42107,42108,42109</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="CodeArchitects.VB6Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3c0f03a050e3c4e0">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SupportDLLs\CodeArchitects.VB6Library.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="CodeArchitects.VB6Library" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectFRM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectFRM.Designer.vb">
+      <DependentUpon>ConnectFRM.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientFRM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientFRM.Designer.vb">
+      <DependentUpon>ClientFRM.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerFRM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerFRM.Designer.vb">
+      <DependentUpon>ServerFRM.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuFRM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuFRM.Designer.vb">
+      <DependentUpon>MenuFRM.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewgameFRM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewgameFRM.Designer.vb">
+      <DependentUpon>NewgameFRM.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="One.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\VisualBasic6.Support.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sounds\ARROW.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\clap.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\CLICK!.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\DEFEND.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\douhavtogo.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\DRIP.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\FF7-BLIP.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\SPACEDE.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\YOU-LOSE.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConnectFRM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConnectFRM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientFRM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClientFRM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerFRM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ServerFRM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuFRM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MenuFRM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewgameFRM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewgameFRM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

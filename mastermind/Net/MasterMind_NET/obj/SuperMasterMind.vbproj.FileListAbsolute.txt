@@ -1,0 +1,26 @@
+C:\Users\Beppe\Desktop\2\MasterMind_NET\bin\Debug\SuperMasterMind.exe
+C:\Users\Beppe\Desktop\2\MasterMind_NET\bin\Debug\SuperMasterMind.pdb
+C:\Users\Beppe\Desktop\2\MasterMind_NET\bin\Debug\SuperMasterMind.xml
+C:\Users\Beppe\Desktop\2\MasterMind_NET\bin\Debug\CodeArchitects.VB6Library.dll
+C:\Users\Beppe\Desktop\2\MasterMind_NET\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Beppe\Desktop\2\MasterMind_NET\obj\Debug\SuperMasterMind.Form1.resources
+C:\Users\Beppe\Desktop\2\MasterMind_NET\obj\Debug\SuperMasterMind.Form2.resources
+C:\Users\Beppe\Desktop\2\MasterMind_NET\obj\Debug\SuperMasterMind.frmAbout.resources
+C:\Users\Beppe\Desktop\2\MasterMind_NET\obj\Debug\SuperMasterMind.Resources.resources
+C:\Users\Beppe\Desktop\2\MasterMind_NET\obj\Debug\SuperMasterMind.vbproj.GenerateResource.Cache
+C:\Users\Beppe\Desktop\2\MasterMind_NET\obj\Debug\SuperMasterMind.exe
+C:\Users\Beppe\Desktop\2\MasterMind_NET\obj\Debug\SuperMasterMind.xml
+C:\Users\Beppe\Desktop\2\MasterMind_NET\obj\Debug\SuperMasterMind.pdb
+C:\Users\Marco\Desktop\Nuovi samples\2\MasterMind_NET\obj\Debug\SuperMasterMind.exe
+C:\Users\Marco\Desktop\Nuovi samples\2\MasterMind_NET\obj\Debug\SuperMasterMind.xml
+C:\Users\Marco\Desktop\Nuovi samples\2\MasterMind_NET\obj\Debug\SuperMasterMind.pdb
+C:\Users\Marco\Desktop\Nuovi samples\2\MasterMind_NET\bin\Debug\SuperMasterMind.exe
+C:\Users\Marco\Desktop\Nuovi samples\2\MasterMind_NET\bin\Debug\SuperMasterMind.pdb
+C:\Users\Marco\Desktop\Nuovi samples\2\MasterMind_NET\bin\Debug\SuperMasterMind.xml
+C:\Users\Marco\Desktop\Nuovi samples\2\MasterMind_NET\bin\Debug\CodeArchitects.VB6Library.dll
+C:\Users\Marco\Desktop\Nuovi samples\2\MasterMind_NET\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Marco\Desktop\Nuovi samples\2\MasterMind_NET\obj\Debug\SuperMasterMind.Form1.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\MasterMind_NET\obj\Debug\SuperMasterMind.Form2.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\MasterMind_NET\obj\Debug\SuperMasterMind.frmAbout.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\MasterMind_NET\obj\Debug\SuperMasterMind.Resources.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\MasterMind_NET\obj\Debug\SuperMasterMind.vbproj.GenerateResource.Cache

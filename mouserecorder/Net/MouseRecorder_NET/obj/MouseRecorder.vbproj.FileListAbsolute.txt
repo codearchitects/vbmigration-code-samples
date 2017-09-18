@@ -1,0 +1,26 @@
+C:\Users\Beppe\Desktop\2\MouseRecorder_NET\bin\Debug\MouseRecorder.exe
+C:\Users\Beppe\Desktop\2\MouseRecorder_NET\bin\Debug\MouseRecorder.pdb
+C:\Users\Beppe\Desktop\2\MouseRecorder_NET\bin\Debug\MouseRecorder.xml
+C:\Users\Beppe\Desktop\2\MouseRecorder_NET\bin\Debug\CodeArchitects.VB6Library.dll
+C:\Users\Beppe\Desktop\2\MouseRecorder_NET\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Beppe\Desktop\2\MouseRecorder_NET\obj\Debug\MouseRecorder.frmMain.resources
+C:\Users\Beppe\Desktop\2\MouseRecorder_NET\obj\Debug\MouseRecorder.frmPlay.resources
+C:\Users\Beppe\Desktop\2\MouseRecorder_NET\obj\Debug\MouseRecorder.frmRec.resources
+C:\Users\Beppe\Desktop\2\MouseRecorder_NET\obj\Debug\MouseRecorder.Resources.resources
+C:\Users\Beppe\Desktop\2\MouseRecorder_NET\obj\Debug\MouseRecorder.vbproj.GenerateResource.Cache
+C:\Users\Beppe\Desktop\2\MouseRecorder_NET\obj\Debug\MouseRecorder.exe
+C:\Users\Beppe\Desktop\2\MouseRecorder_NET\obj\Debug\MouseRecorder.xml
+C:\Users\Beppe\Desktop\2\MouseRecorder_NET\obj\Debug\MouseRecorder.pdb
+C:\Users\Marco\Desktop\Nuovi samples\2\MouseRecorder_NET\obj\Debug\MouseRecorder.exe
+C:\Users\Marco\Desktop\Nuovi samples\2\MouseRecorder_NET\obj\Debug\MouseRecorder.xml
+C:\Users\Marco\Desktop\Nuovi samples\2\MouseRecorder_NET\obj\Debug\MouseRecorder.pdb
+C:\Users\Marco\Desktop\Nuovi samples\2\MouseRecorder_NET\bin\Debug\MouseRecorder.exe
+C:\Users\Marco\Desktop\Nuovi samples\2\MouseRecorder_NET\bin\Debug\MouseRecorder.pdb
+C:\Users\Marco\Desktop\Nuovi samples\2\MouseRecorder_NET\bin\Debug\MouseRecorder.xml
+C:\Users\Marco\Desktop\Nuovi samples\2\MouseRecorder_NET\bin\Debug\CodeArchitects.VB6Library.dll
+C:\Users\Marco\Desktop\Nuovi samples\2\MouseRecorder_NET\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Marco\Desktop\Nuovi samples\2\MouseRecorder_NET\obj\Debug\MouseRecorder.frmMain.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\MouseRecorder_NET\obj\Debug\MouseRecorder.frmPlay.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\MouseRecorder_NET\obj\Debug\MouseRecorder.frmRec.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\MouseRecorder_NET\obj\Debug\MouseRecorder.Resources.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\MouseRecorder_NET\obj\Debug\MouseRecorder.vbproj.GenerateResource.Cache

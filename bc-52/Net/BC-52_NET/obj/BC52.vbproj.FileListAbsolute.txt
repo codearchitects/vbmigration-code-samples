@@ -1,0 +1,14 @@
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BC-52_NET\bin\Debug\Example Key.C52
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BC-52_NET\bin\Debug\BC-52.HLP
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BC-52_NET\bin\Debug\BC52.exe
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BC-52_NET\bin\Debug\BC52.pdb
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BC-52_NET\bin\Debug\BC52.xml
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BC-52_NET\bin\Debug\CodeArchitects.VB6Library.dll
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BC-52_NET\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BC-52_NET\obj\Debug\BC52.frmInfo.resources
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BC-52_NET\obj\Debug\BC52.frmMain.resources
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BC-52_NET\obj\Debug\BC52.Resources.resources
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BC-52_NET\obj\Debug\BC52.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BC-52_NET\obj\Debug\BC52.exe
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BC-52_NET\obj\Debug\BC52.xml
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BC-52_NET\obj\Debug\BC52.pdb

@@ -1,0 +1,13 @@
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\ZynExplore_NET\bin\Debug\Project1.exe
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\ZynExplore_NET\bin\Debug\Project1.pdb
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\ZynExplore_NET\bin\Debug\Project1.xml
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\ZynExplore_NET\bin\Debug\CodeArchitects.VB6Library.dll
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\ZynExplore_NET\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\ZynExplore_NET\obj\Debug\Project1.frmAbout.resources
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\ZynExplore_NET\obj\Debug\Project1.frmMain.resources
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\ZynExplore_NET\obj\Debug\Project1.frmSource.resources
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\ZynExplore_NET\obj\Debug\Project1.Resources.resources
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\ZynExplore_NET\obj\Debug\Project1.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\ZynExplore_NET\obj\Debug\Project1.exe
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\ZynExplore_NET\obj\Debug\Project1.xml
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\ZynExplore_NET\obj\Debug\Project1.pdb

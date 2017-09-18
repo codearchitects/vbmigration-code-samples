@@ -1,0 +1,146 @@
+-------------------------------------------------------------------------------
+Sample Name:	Battleship ONLINE
+
+Description:	A nice battleship game which uses winsock to play remotely 
+		with another player, even over internet.
+		
+		This sample shows VB Migration Partner's capabilities to easily 
+		migrate winsock and other graphical controls.
+
+Download URL: 	http://www.Planet-Source-Code.com/vb/scripts/ShowCode.asp?txtCodeId=8510&lngWId=1
+-------------------------------------------------------------------------------
+
+IMPORTANT NOTE
+The first step to ensure that you can migrate the VB6 project to VB.NET is 
+loading the original project in the Visual Basic 6 IDE, run it to ensure that 
+it works fine, that all the required type libraries are installed, and that all 
+file paths are correct. 
+Regardless of whether you edited the source code in any way, you should save 
+the VB6 project: this save operation ensures that the .vbp file includes  
+the correct path and version of referenced type libraries. 
+After saving the project, it's usually a good idea to compile the VB6 project
+to an executable, to detect any VB6 compilation errors that would appear under 
+VB.NET as well. 
+(If you don't recompile the project VB Migration Partner will display a warning 
+when you later load the project.)
+
+
+VB Migration Partner migrates correctly after adding just a few pragmas.
+
+
+VB6 differs from .NET in how the application closes; to emulate
+the VB6 behavior, you need to enable the Application Framework setting, which 
+permits to close the application when the last form closes. You do it by adding the 
+following pragma at the top of ConnectFRM:
+
+    '## EnableAppFramework ConnectFRM, "", True, 1
+
+You also need to include all sound files in the resulting VB.NET project, 
+by inserting next pragma at the top of the same file:
+
+    '## AddDataFile Sounds\*
+
+
+In VB6, when you access a control located in a different form, a Load event raises 
+in target form. 
+In VB.NET the Load event raises only when you call the Show method. 
+If it is essential to reproduce the same event sequence you have in VB6, then you 
+must force a Load event by inserting a proper pragma just before accessing the control:
+
+In ConnectFRM:
+
+Private Sub ConnectCMD_Click()
+    If nicknameTXT.Text = "" Then Exit Sub 'wont connect till a name has been entered!
+
+    If Me.Caption = "Connect as Server" Then 'connects u to the client
+        '## InsertStatement Load6(ServerFRM)
+        ServerFRM.Winsock.Close 'closes any previous connections
+        ServerFRM.Winsock.LocalPort = CLng(187) '187 is the port
+        ServerFRM.Winsock.Listen 'listens to see if client wants to connect
+        ServerFRM.nickSERVER.Caption = nicknameTXT.Text 'put the username for the server in a lbl on serverfrm
+    End If
+
+    If Me.Caption = "Connect as Client" Then 'connects u to the server
+        If IPtxt.Text = "Server's IP here" Then Exit Sub 'just incase u forgot to put IP in
+        If IPtxt.Text = "" Then Exit Sub 'just incase u forgot to put IP in
+        '## InsertStatement Load6(ClientFRM)
+        ClientFRM.Winsock.Close 'closes any previous connections
+        ClientFRM.Winsock.Connect IPtxt.Text, "187" 'sends ur IP to connect to server:187 is the port
+        ClientFRM.nickCLIENT.Caption = nicknameTXT.Text 'puts username for client in a lbl on clientfrm
+    End If
+End Sub
+
+
+Either in ClientFRM or in ServerFRM file, the sub winsock_DataArrival has the following 
+declaration statement:
+
+    Dim strData, strData2 As String
+
+This is a common mistake of VB6 programmers when declarating variables and the neat effect 
+is that strData is actually declared as a Variant. You can correct this mistake by either 
+fixing the original VB6 code or by inserting the following pragma before the declaration:
+
+    '## strData.SetType String
+    Dim strData, strData2 As String 'where the data sent by the client will be stored
+
+If you assign the Left or Top property of a VB6 form before displaying it, such 
+assignments overrides the StartUpPosition property. This isn't true in VB.NET.
+
+You can emulate this behavior under VB.NET by inserting a pragma immediately before settings 
+Top and Left properties in subs battleshipLBL_Click, CarrierLBL_Click, CruiserLBL_Click, 
+DestroyerLBL_Click and SubMarineLBL_Click either in ClientFRM or in ServerFRM files:
+
+Private Sub battleshipLBL_Click()
+    'used for the MENUFRM
+    FORMtagg = Me.Tag 'tells menufrm that it was loaded from the clientfrm
+    whichMNU = "battleship" 'tells menufrm that battleshiplbl was clicked
+    'sets position of menuFRM
+    '## InsertStatement MenuFRM.StartPosition = FormStartPosition.Manual
+    MenuFRM.Left = Me.Left + 4800
+    MenuFRM.Top = Me.Top + 8950
+    MenuFRM.Show
+End Sub
+
+Private Sub CarrierLBL_Click()
+    'used for the MENUFRM
+    FORMtagg = Me.Tag 'tells menufrm that it was loaded from the clientfrm
+    whichMNU = "carrier" 'tells menufrm that carrierlbl was clicked
+    'sets position of menuFRM
+    '## InsertStatement MenuFRM.StartPosition = FormStartPosition.Manual
+    MenuFRM.Left = Me.Left + 6360
+    MenuFRM.Top = Me.Top + 8950
+    MenuFRM.Show
+End Sub
+
+Private Sub CruiserLBL_Click()
+    'used for the MENUFRM
+    FORMtagg = Me.Tag 'tells menufrm that it was loaded from the clientfrm
+    whichMNU = "cruiser" 'tells menufrm that cruiserlbl was clicked
+    'sets position of menuFRM
+    '## InsertStatement MenuFRM.StartPosition = FormStartPosition.Manual
+    MenuFRM.Left = Me.Left + 3240
+    MenuFRM.Top = Me.Top + 8950
+    MenuFRM.Show
+End Sub
+
+Private Sub DestroyerLBL_Click()
+    'used for the MENUFRM
+    FORMtagg = Me.Tag 'tells menufrm that it was loaded from the clientfrm
+    whichMNU = "destroyer" 'tells menufrm that destroyerlbl was clicked
+    'sets position of menuFRM
+    '## InsertStatement MenuFRM.StartPosition = FormStartPosition.Manual
+    MenuFRM.Left = Me.Left + 120
+    MenuFRM.Top = Me.Top + 8950
+    MenuFRM.Show
+End Sub
+
+Private Sub SubMarineLBL_Click()
+    'used for the MENUFRM
+    FORMtagg = Me.Tag 'tells menufrm that it was loaded from the clientfrm
+    whichMNU = "submarine" 'tells mnufrm that submarine was clicked!!
+    'sets position of menuFRM
+    '## InsertStatement MenuFRM.StartPosition = FormStartPosition.Manual
+    MenuFRM.Left = Me.Left + 1680
+    MenuFRM.Top = Me.Top + 8950
+    MenuFRM.Show
+End Sub

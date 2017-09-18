@@ -1,0 +1,169 @@
+-------------------------------------------------------------------------------
+Sample Name: MP3Player
+
+Description: An MP3 player that uses nonrectangular forms, makes lots of calls 
+             to the Windows API, and peeks at data buried inside binary data. 
+             As if it weren’t enough, the application uses transparent Image 
+             controls to create “hot spots” and non-standard push buttons
+
+Download URL: ???
+-------------------------------------------------------------------------------
+
+IMPORTANT NOTE
+The first step to ensure that you can migrate the VB6 project to VB.NET is 
+loading the original project in the Visual Basic 6 IDE, run it to ensure that 
+it works fine, that all the required type libraries are installed, and that all 
+file paths are correct. 
+Regardless of whether you edited the source code in any way, you should save 
+the VB6 project: this save operation ensures that the .vbp file includes  
+the correct path and version of referenced type libraries. 
+After saving the project, it's usually a good idea to compile the VB6 project
+to an executable, to detect any VB6 compilation errors that would appear under 
+VB.NET as well. 
+(If you don't recompile the project VB Migration Partner will display a warning 
+when you later load the project.)
+
+
+VB Migration Partner converts this sample to a VB.NET solution that compiles
+correctly. However, the code throws an exception at runtime. You need to add
+some InsertStatement pragmas to work around this issue.
+
+More precisely, VB Migration Partner supports the hDC property of the PictureBox
+control, but requires that you later invoke the control's ReleaseHDc method to
+release the handle to the device context. Here's how to insert the pragma:
+
+
+Public Function MakeRegion(picSkin As PictureBox) As Long
+   
+    Dim X As Long, Y As Long, StartLineX As Long
+    Dim FullRegion As Long, LineRegion As Long
+    Dim TransparentColor As Long
+    Dim InFirstRegion As Boolean
+    Dim InLine As Boolean
+    Dim hDC As Long
+    Dim PicWidth As Long
+    Dim PicHeight As Long
+    
+    hDC = picSkin.hDC
+    PicWidth = picSkin.ScaleWidth
+    PicHeight = picSkin.ScaleHeight
+    
+    InFirstRegion = True: InLine = False
+    X = Y = StartLineX = 0
+    
+    ' פונקציה זו יוצרת אזור על פי תמונה נתונה
+    ' הפונקציה סורקת את השורות בתמונה, וכל הפיקסלים
+    ' שאינם בצבע שנבחר להיות שקוף מוספים לאזור
+   ' הצבע הנבחר לשקיפות הוא תמיד הצבע בפינה השמאלית עליונה
+    TransparentColor = GetPixel(hDC, 0, 0)
+    
+    For Y = 0 To PicHeight - 1
+        For X = 0 To PicWidth - 1
+            
+            If GetPixel(hDC, X, Y) = TransparentColor Or X = PicWidth Then
+                ' בשורה זה ישנם פיקסלים שקופים
+                If InLine Then
+                    InLine = False
+                    LineRegion = CreateRectRgn(StartLineX, Y, X, Y + 1)
+                    
+                    If InFirstRegion Then
+                        FullRegion = LineRegion
+                        InFirstRegion = False
+                    Else
+                        Call CombineRgn(FullRegion, FullRegion, LineRegion, 2)    ' A sample by Yaniv Drukman: www.dr-vb.co.il
+                        ' מחיקת האובייקט שנוצר ליצירת האזור
+                        DeleteObject LineRegion
+                    End If
+                End If
+            Else
+                ' הגענו לפיקבל לא שקוף
+                If Not InLine Then
+                    InLine = True
+                    StartLineX = X
+                End If
+            End If
+        Next
+    Next
+
+    '## InsertStatement picSkin.ReleaseHdc()
+
+    MakeRegion = FullRegion
+End Function
+
+
+Besides, in order to invoke correctly Windows API "GetOpenFileName" to show the 
+open dialog, you should append a NULL character to Filter variable, contained in
+the OPENFILENAME structure. Here is the code to insert in OpenDlg function:
+    
+    Public Function OpenDlg(hWnd As Long, Optional Filter As String = "", Optional Title As String = "Select file", _
+                            Optional InitialDir As String, Optional MultiSelect As Boolean = False)
+        Dim OFName As OPENFILENAME
+        Static InDir As String
+
+        Do While InStr(1, Filter, "|") > 0
+            'Replace all '|' chars in the filter with spaces
+            Mid(Filter, InStr(1, Filter, "|")) = Chr$(0)
+        Loop
+        '## InsertStatement Filter &= Chr6(0)
+
+        ...
+    
+    End Function
+
+The nonrectangular windows display incorrectly under Microsoft Vista, but this defect is present in the original VB6 
+application as well.
+In order to fix this annoyance, you can add this code in modShapedForm.bas module:
+
+    '## REM added by Code Architects to support Microsoft Vista
+	Private Declare Function GetVersion Lib "kernel32.dll" () As Long
+    '## REM ----
+	
+    Private Sub MakeFormShaped(f As Form, ary, mx As Long, my As Long)
+    	my_hwnd = f.hWnd
+       
+	maxCount = UBound(ary)
+    
+    	Dim aryPoints() As POINTAPI
+	Dim hRegion As Long
+    	Dim numC As Integer
+    
+    	On Error GoTo errh
+    
+    	'## REM added by Code Architects to support Microsoft Vista
+    	Dim osVersion As Integer
+    	Dim yOffset As Integer
+    	osVersion = GetVersion() And 255
+    	If osVersion >= 6 Then yOffset = 6
+    	'## REM ----
+    
+
+    	If my_hwnd <> 0 Then
+           numC = maxCount
+           ReDim aryPoints(0 To numC) As POINTAPI
+           '*** create the appropriate array (aryPoints) with the given points (ary)
+            For i = 0 To numC
+              X = Split(ary(i), ",")
+              a = X(0) - mx
+              b = X(1) - my
+            
+               aryPoints(i).X = a
+               aryPoints(i).Y = b - yOffset
+
+           Next
+
+    	...
+
+    End Sub
+
+
+
+VB Migration Partner typically delivers many warnings that are related to 
+code analysis as well as suggestions about how you can improve the original 
+VB6 code before converting it to VB.NET. 
+You can suppress these warnings by adding the following project-level pragmas 
+at the top of any of the file that make up the project:
+
+'## project:DisableMessages CodeAnalysis
+'## project:DisableMessage 1478
+'## project:DisableMessage 0354
+'## project:DisableMessage 0364

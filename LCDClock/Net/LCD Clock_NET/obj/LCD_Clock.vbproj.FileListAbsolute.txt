@@ -1,0 +1,12 @@
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\LCD Clock_NET\bin\Debug\LCD_Clock.exe
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\LCD Clock_NET\bin\Debug\LCD_Clock.pdb
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\LCD Clock_NET\bin\Debug\LCD_Clock.xml
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\LCD Clock_NET\bin\Debug\CodeArchitects.VB6Library.dll
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\LCD Clock_NET\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\LCD Clock_NET\obj\Debug\LCD_Clock.AboutFrm.resources
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\LCD Clock_NET\obj\Debug\LCD_Clock.MainFrm.resources
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\LCD Clock_NET\obj\Debug\LCD_Clock.Resources.resources
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\LCD Clock_NET\obj\Debug\LCD_Clock.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\LCD Clock_NET\obj\Debug\LCD_Clock.exe
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\LCD Clock_NET\obj\Debug\LCD_Clock.xml
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\LCD Clock_NET\obj\Debug\LCD_Clock.pdb

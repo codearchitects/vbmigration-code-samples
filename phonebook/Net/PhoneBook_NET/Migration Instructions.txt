@@ -1,0 +1,149 @@
+-------------------------------------------------------------------------------
+Sample Name: PhoneBook
+
+Description: Another program to store names, addresses, and phone numbers. 
+             In spite of its simplicity, this sample is a challenge for an 
+             automatic conversion tool. It uses the  Shell_NotifyIcon Windows 
+             API method to display an icon in the tray area and shows a popup 
+             menu when the icon is clicked and it displays a print preview 
+             using graphic methods and custom ScaleMode settings. 
+	     It needed seven pragmas to solve all these issues, but the VB.NET 
+             code runs as flawlessly.
+
+Download URL: http://www.a1vbcode.com/app-1860.asp
+-------------------------------------------------------------------------------
+
+IMPORTANT NOTE
+The first step to ensure that you can migrate the VB6 project to VB.NET is 
+loading the original project in the Visual Basic 6 IDE, run it to ensure that 
+it works fine, that all the required type libraries are installed, and that all 
+file paths are correct. 
+Regardless of whether you edited the source code in any way, you should save 
+the VB6 project: this save operation ensures that the .vbp file includes  
+the correct path and version of referenced type libraries. 
+After saving the project, it's usually a good idea to compile the VB6 project
+to an executable, to detect any VB6 compilation errors that would appear under 
+VB.NET as well. 
+(If you don't recompile the project VB Migration Partner will display a warning 
+when you later load the project.)
+
+The project uses an Access database, thus you need an AddDataFile pragma to
+ensure that this file is added to the VB.NET solution. You can add this
+pragma at the topi of any file in the VB6 project:
+
+'##AddDataFile phonebook.mdb
+
+
+The first migration attempt produces a VB.NET solution that has a compilation
+error in the pdi_AdvancedSearch_Click methods, caused by a reference to a 
+form that doesn't exists in the project. This method is never used in the 
+application, which explains why VB6 shows no error. You can fix the problem 
+by removing the method in the VB6 source code or by using a ParseMode pragma 
+that forces VB Migration Partner to ignore these lines during the parsing stage:
+
+'##ParseMode Off, 3
+Private Sub pdi_AdvancedSearch_Click()
+    frm_AdvancedSearch.Show vbModal
+End Sub
+
+Alternatively you can use the OutputMode pragma to comment out those code lines:
+
+'##OutputMode Remarks, 3
+Private Sub pdi_AdvancedSearch_Click()
+    frm_AdvancedSearch.Show vbModal
+End Sub
+
+In the latter case, these lines appear in the VB.NET code as commented statements.
+
+
+The Main Sub method contains a call to the Shell_NotifyIcon API passing a 
+NOTIFYICONDATA structure. You must add a UseSystemString pragma in the 
+structure definition to ensure that the structure is marshaled correctly, 
+therefore in mdul_Main module edit the code as follows:
+
+Type NOTIFYICONDATA
+    cbSize           As Long
+    hwnd             As Long
+    uID              As Long
+    uFlags           As Long
+    uCallbackMessage As Long
+    hIcon            As Long
+'##szTip.UseSystemString
+    szTip            As String * MAX_TOOLTIP
+End Type
+
+See the documentation for more information about API function marshalling options.
+
+
+The converted VB.NET solution now runs correctly. However, you'll notice a few
+differences in the form layout . 
+
+First, the TabStrip control has two lines of tabs in VB.NET and only one in VB6.
+The reason: the original control has the MultiRows property setted to True.
+In VB.NET this property causes tabs to be spanned to multiple rows for a 
+better looking layout, whereas VB6 adds a second row only when there is not enough
+space on first one. You can use a WriteProperty pragma to reset the 
+TabStrip's MultiRow property, therefore add this line at the top of the frm_Main file:
+
+'##tab_Main.WriteProperty MultiLine, False
+
+Next, you'll see that the lvw_PhoneBook ListView control isn't visible. The reason
+is that it falls "under" the TabStrip control itself. You can change the relative
+Z-Order of these controls by means of the following pragma, to be inserted at
+the top of the frm_Main file:
+
+
+'##lvw_PhoneBook.BringToFront
+
+
+You can finally run the application. It works fine, but opening the Print Preview Form 
+twice you'll notice that the pic_Preview PictureBox size isn't set correctly.
+The cause for this behavior is explained in the Knowledge Base: many VB6 applications 
+manipulate forms by means of their default instance.
+
+VB.NET supports form default instances too, converted application might 
+not behave as expected. What happens in this sample is that the second time you
+Print Preview form is opened, its controls aren't reinitialized correctly.
+
+The fix for this problem is quite simple. Just force VB.NET to use a new instance 
+of the form each time it is opened, by setting its default instance to Nothing 
+before it is referenced again. You just need an InsertStatement pragma, as follows:
+
+Private Sub pdi_PrintPreview_Click()
+   '##InsertStatement frm_PrintPreview = Nothing
+   
+    With frm_PrintPreview
+        .pic_Preview.Width = Printer.Width
+        .pic_Preview.Height = Printer.Height
+        .pic_Shadow.Width = .pic_Preview.Width
+        .pic_Shadow.Height = .pic_Preview.Height
+        
+        .pic_Preview.ScaleLeft = Printer.ScaleLeft
+        .pic_Preview.ScaleTop = Printer.ScaleTop
+        .pic_Preview.ScaleWidth = Printer.ScaleWidth
+        .pic_Preview.ScaleHeight = Printer.ScaleHeight
+        .pic_Shadow.ScaleWidth = .pic_Preview.ScaleWidth
+        .pic_Shadow.ScaleHeight = .pic_Preview.ScaleHeight
+        
+        Call MakePrintPreview
+        .Show vbModal
+    End With
+End Sub
+
+
+You also need an AutoNew pragma to solve the problem of As New variables and
+the different semantices between VB6 and VB.NET. Add the pragma in the frm_Edit
+file:
+
+'##v_rsEdit.AutoNew True
+Dim v_rsEdit As New Recordset
+
+
+
+VB Migration Partner typically delivers many warnings that are related to 
+code analysis as well as suggestions about how you can improve the original 
+VB6 code before converting it to VB.NET. 
+You can suppress these warnings by adding the following project-level pragmas 
+at the top of any of the file that make up the project:
+
+'##project:DisableMessage 0181

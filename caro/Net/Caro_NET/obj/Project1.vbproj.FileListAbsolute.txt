@@ -1,0 +1,20 @@
+C:\Users\Beppe\Desktop\2\Caro_VB6_NET\bin\Debug\Project1.exe
+C:\Users\Beppe\Desktop\2\Caro_VB6_NET\bin\Debug\Project1.pdb
+C:\Users\Beppe\Desktop\2\Caro_VB6_NET\bin\Debug\Project1.xml
+C:\Users\Beppe\Desktop\2\Caro_VB6_NET\bin\Debug\CodeArchitects.VB6Library.dll
+C:\Users\Beppe\Desktop\2\Caro_VB6_NET\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Beppe\Desktop\2\Caro_VB6_NET\obj\Debug\Project1.Resources.resources
+C:\Users\Beppe\Desktop\2\Caro_VB6_NET\obj\Debug\Project1.vbproj.GenerateResource.Cache
+C:\Users\Beppe\Desktop\2\Caro_VB6_NET\obj\Debug\Project1.exe
+C:\Users\Beppe\Desktop\2\Caro_VB6_NET\obj\Debug\Project1.xml
+C:\Users\Beppe\Desktop\2\Caro_VB6_NET\obj\Debug\Project1.pdb
+C:\Users\Marco\Desktop\Nuovi samples\2\Caro_NET\obj\Debug\Project1.exe
+C:\Users\Marco\Desktop\Nuovi samples\2\Caro_NET\obj\Debug\Project1.xml
+C:\Users\Marco\Desktop\Nuovi samples\2\Caro_NET\obj\Debug\Project1.pdb
+C:\Users\Marco\Desktop\Nuovi samples\2\Caro_NET\bin\Debug\Project1.exe
+C:\Users\Marco\Desktop\Nuovi samples\2\Caro_NET\bin\Debug\Project1.pdb
+C:\Users\Marco\Desktop\Nuovi samples\2\Caro_NET\bin\Debug\Project1.xml
+C:\Users\Marco\Desktop\Nuovi samples\2\Caro_NET\bin\Debug\CodeArchitects.VB6Library.dll
+C:\Users\Marco\Desktop\Nuovi samples\2\Caro_NET\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Marco\Desktop\Nuovi samples\2\Caro_NET\obj\Debug\Project1.Resources.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\Caro_NET\obj\Debug\Project1.vbproj.GenerateResource.Cache

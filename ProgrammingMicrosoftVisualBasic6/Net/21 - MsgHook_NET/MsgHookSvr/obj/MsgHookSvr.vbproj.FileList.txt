@@ -1,0 +1,10 @@
+bin\Debug\MsgHookSvr.dll
+bin\Debug\MsgHookSvr.pdb
+bin\Debug\MsgHookSvr.xml
+bin\Debug\CodeArchitects.VB6Library.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\MsgHookSvr.Resources.resources
+obj\Debug\MsgHookSvr.vbproj.GenerateResource.Cache
+obj\Debug\MsgHookSvr.dll
+obj\Debug\MsgHookSvr.xml
+obj\Debug\MsgHookSvr.pdb

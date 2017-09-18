@@ -1,0 +1,5 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DataProject.Form1.resources
+obj\Debug\DataProject.Form2.resources
+obj\Debug\DataProject.Resources.resources
+obj\Debug\DataProject.vbproj.GenerateResource.Cache

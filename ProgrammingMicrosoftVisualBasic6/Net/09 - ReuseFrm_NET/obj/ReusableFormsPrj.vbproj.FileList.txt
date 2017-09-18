@@ -1,0 +1,10 @@
+bin\Debug\ReusableFormsPrj.exe
+bin\Debug\ReusableFormsPrj.pdb
+bin\Debug\ReusableFormsPrj.xml
+bin\Debug\CodeArchitects.VB6Library.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ReusableFormsPrj.Resources.resources
+obj\Debug\ReusableFormsPrj.vbproj.GenerateResource.Cache
+obj\Debug\ReusableFormsPrj.exe
+obj\Debug\ReusableFormsPrj.xml
+obj\Debug\ReusableFormsPrj.pdb

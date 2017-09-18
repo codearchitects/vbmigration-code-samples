@@ -1,0 +1,13 @@
+bin\Debug\Project2.exe
+bin\Debug\Project2.pdb
+bin\Debug\Project2.xml
+bin\Debug\CodeArchitects.VB6Library.dll
+bin\Debug\Project1.dll
+bin\Debug\Project1.pdb
+bin\Debug\Project1.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Project2.Resources.resources
+obj\Debug\Project2.vbproj.GenerateResource.Cache
+obj\Debug\Project2.exe
+obj\Debug\Project2.xml
+obj\Debug\Project2.pdb

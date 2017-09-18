@@ -1,0 +1,10 @@
+bin\Debug\DataDrivenForms.exe
+bin\Debug\DataDrivenForms.pdb
+bin\Debug\DataDrivenForms.xml
+bin\Debug\CodeArchitects.VB6Library.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DataDrivenForms.Resources.resources
+obj\Debug\DataDrivenForms.vbproj.GenerateResource.Cache
+obj\Debug\DataDrivenForms.exe
+obj\Debug\DataDrivenForms.xml
+obj\Debug\DataDrivenForms.pdb

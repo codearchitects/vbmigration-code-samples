@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MDIDemo2", "MDIDemo2\MDIDemo2.vbproj", "{DD45A489-E217-4E74-B980-295E9F68A728}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MDIDemo1", "MDIDemo1\MDIDemo1.vbproj", "{7D0205A2-B89D-4EFA-85BD-2288837B5124}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MDIDemo3", "MDIDemo3\MDIDemo3.vbproj", "{CB075FC2-4B70-43FC-BA2E-C91135CE27C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD45A489-E217-4E74-B980-295E9F68A728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD45A489-E217-4E74-B980-295E9F68A728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD45A489-E217-4E74-B980-295E9F68A728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD45A489-E217-4E74-B980-295E9F68A728}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D0205A2-B89D-4EFA-85BD-2288837B5124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D0205A2-B89D-4EFA-85BD-2288837B5124}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D0205A2-B89D-4EFA-85BD-2288837B5124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D0205A2-B89D-4EFA-85BD-2288837B5124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB075FC2-4B70-43FC-BA2E-C91135CE27C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB075FC2-4B70-43FC-BA2E-C91135CE27C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB075FC2-4B70-43FC-BA2E-C91135CE27C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB075FC2-4B70-43FC-BA2E-C91135CE27C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

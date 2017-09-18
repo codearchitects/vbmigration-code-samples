@@ -1,0 +1,12 @@
+bin\Debug\RTFDemo.exe
+bin\Debug\RTFDemo.pdb
+bin\Debug\RTFDemo.xml
+bin\Debug\CodeArchitects.VB6Library.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\RTFDemo.frmAbout.resources
+obj\Debug\RTFDemo.frmMain.resources
+obj\Debug\RTFDemo.Resources.resources
+obj\Debug\RTFDemo.vbproj.GenerateResource.Cache
+obj\Debug\RTFDemo.exe
+obj\Debug\RTFDemo.xml
+obj\Debug\RTFDemo.pdb

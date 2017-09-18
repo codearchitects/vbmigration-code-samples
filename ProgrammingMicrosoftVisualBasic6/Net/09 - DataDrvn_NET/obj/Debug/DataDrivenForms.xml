@@ -1,0 +1,44 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DataDrivenForms
+</name>
+</assembly>
+<members>
+<member name="P:DataDrivenForms.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:DataDrivenForms.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:DataDrivenForms.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:DataDrivenForms.ControlItems.Add(System.Object@)">
+	<summary>
+ Adds a member to a Collection object
+ </summary>
+</member><member name="M:DataDrivenForms.ControlItems.Remove(System.Object@)">
+	<summary>
+ Removes a member from a Collection object
+ </summary>
+</member><member name="P:DataDrivenForms.ControlItems.Item(System.Object)">
+	<summary>
+ Returns a specific member of a Collection object either by position or key
+ </summary>
+</member><member name="P:DataDrivenForms.ControlItems.Count">
+	<summary>
+ Returns the number of members in a collection
+ </summary>
+</member><member name="M:DataDrivenForms.ControlItems.Clear">
+	<summary>
+ Removes all members from a Collection object
+ </summary>
+</member>
+</members>
+</doc>

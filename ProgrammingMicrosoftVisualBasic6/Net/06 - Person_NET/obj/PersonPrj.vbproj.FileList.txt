@@ -1,0 +1,10 @@
+bin\Debug\PersonPrj.exe
+bin\Debug\PersonPrj.pdb
+bin\Debug\PersonPrj.xml
+bin\Debug\CodeArchitects.VB6Library.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\PersonPrj.Resources.resources
+obj\Debug\PersonPrj.vbproj.GenerateResource.Cache
+obj\Debug\PersonPrj.exe
+obj\Debug\PersonPrj.xml
+obj\Debug\PersonPrj.pdb

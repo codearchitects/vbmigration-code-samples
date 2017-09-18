@@ -1,0 +1,52 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Project1
+</name>
+</assembly>
+<members>
+<member name="P:Project1.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Project1.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Project1.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Project1.ProductGrid.BackColor">
+	<summary>
+ Returns/sets the background color used to display text and graphics in an object.
+ </summary>
+</member><member name="P:Project1.ProductGrid.ForeColor">
+	<summary>
+ Returns/sets the background color used to display text and graphics in an object.
+ </summary>
+</member><member name="P:Project1.ProductGrid.Enabled">
+	<summary>
+ Returns/sets a value that determines whether an object can respond to user-generated events.
+ </summary>
+</member><member name="P:Project1.ProductGrid.Font">
+	<summary>
+ Returns a Font object.
+ </summary>
+</member><member name="P:Project1.ProductGrid.BorderStyle">
+	<summary>
+ Returns/sets the border style for an object.
+ </summary>
+</member><member name="P:Project1.ProductGrid.Checkboxes">
+	<summary>
+ Returns/sets a value which determines if the control displays a checkbox next to each item in the list.
+ </summary>
+</member><member name="P:Project1.ProductGrid.FullRowSelect">
+	<summary>
+ Returns/sets whether selecting a column highlights the entire row.
+ </summary>
+</member>
+</members>
+</doc>

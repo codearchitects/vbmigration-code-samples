@@ -1,0 +1,11 @@
+bin\Debug\ObjViewerPrj.exe
+bin\Debug\ObjViewerPrj.pdb
+bin\Debug\ObjViewerPrj.xml
+bin\Debug\CodeArchitects.VB6Library.dll
+bin\Debug\DAO.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ObjViewerPrj.Resources.resources
+obj\Debug\ObjViewerPrj.vbproj.GenerateResource.Cache
+obj\Debug\ObjViewerPrj.exe
+obj\Debug\ObjViewerPrj.xml
+obj\Debug\ObjViewerPrj.pdb

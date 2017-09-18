@@ -1,0 +1,12 @@
+bin\Debug\MDIDemo1.exe
+bin\Debug\MDIDemo1.pdb
+bin\Debug\MDIDemo1.xml
+bin\Debug\CodeArchitects.VB6Library.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\MDIDemo1.frmAbout.resources
+obj\Debug\MDIDemo1.frmMain.resources
+obj\Debug\MDIDemo1.Resources.resources
+obj\Debug\MDIDemo1.vbproj.GenerateResource.Cache
+obj\Debug\MDIDemo1.exe
+obj\Debug\MDIDemo1.xml
+obj\Debug\MDIDemo1.pdb

@@ -1,0 +1,10 @@
+bin\Debug\DataProject.exe
+bin\Debug\DataProject.pdb
+bin\Debug\DataProject.xml
+bin\Debug\CodeArchitects.VB6Library.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DataProject.Resources.resources
+obj\Debug\DataProject.vbproj.GenerateResource.Cache
+obj\Debug\DataProject.exe
+obj\Debug\DataProject.xml
+obj\Debug\DataProject.pdb

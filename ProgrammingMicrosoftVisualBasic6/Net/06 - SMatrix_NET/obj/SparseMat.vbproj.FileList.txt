@@ -1,0 +1,10 @@
+bin\Debug\SparseMat.exe
+bin\Debug\SparseMat.pdb
+bin\Debug\SparseMat.xml
+bin\Debug\CodeArchitects.VB6Library.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SparseMat.Resources.resources
+obj\Debug\SparseMat.vbproj.GenerateResource.Cache
+obj\Debug\SparseMat.exe
+obj\Debug\SparseMat.xml
+obj\Debug\SparseMat.pdb

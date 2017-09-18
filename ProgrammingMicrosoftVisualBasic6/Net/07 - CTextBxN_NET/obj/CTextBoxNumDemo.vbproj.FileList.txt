@@ -1,0 +1,10 @@
+bin\Debug\CTextBoxNumDemo.exe
+bin\Debug\CTextBoxNumDemo.pdb
+bin\Debug\CTextBoxNumDemo.xml
+bin\Debug\CodeArchitects.VB6Library.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CTextBoxNumDemo.Resources.resources
+obj\Debug\CTextBoxNumDemo.vbproj.GenerateResource.Cache
+obj\Debug\CTextBoxNumDemo.exe
+obj\Debug\CTextBoxNumDemo.xml
+obj\Debug\CTextBoxNumDemo.pdb

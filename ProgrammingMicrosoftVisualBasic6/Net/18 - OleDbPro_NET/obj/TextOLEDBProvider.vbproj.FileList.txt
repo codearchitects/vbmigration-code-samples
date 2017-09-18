@@ -1,0 +1,12 @@
+bin\Debug\TextOLEDBProvider.dll
+bin\Debug\TextOLEDBProvider.pdb
+bin\Debug\TextOLEDBProvider.xml
+bin\Debug\CodeArchitects.VB6Library.dll
+bin\Debug\MSDAOSP.dll
+bin\Debug\OLEDBError.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\TextOLEDBProvider.Resources.resources
+obj\Debug\TextOLEDBProvider.vbproj.GenerateResource.Cache
+obj\Debug\TextOLEDBProvider.dll
+obj\Debug\TextOLEDBProvider.xml
+obj\Debug\TextOLEDBProvider.pdb

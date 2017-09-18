@@ -1,0 +1,10 @@
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\Waves3D_NET\bin\Debug\Waves.exe
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\Waves3D_NET\bin\Debug\Waves.pdb
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\Waves3D_NET\bin\Debug\Waves.xml
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\Waves3D_NET\bin\Debug\CodeArchitects.VB6Library.dll
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\Waves3D_NET\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\Waves3D_NET\obj\Debug\Waves.Resources.resources
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\Waves3D_NET\obj\Debug\Waves.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\Waves3D_NET\obj\Debug\Waves.exe
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\Waves3D_NET\obj\Debug\Waves.xml
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\Waves3D_NET\obj\Debug\Waves.pdb

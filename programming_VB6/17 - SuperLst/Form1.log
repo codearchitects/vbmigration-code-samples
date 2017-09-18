@@ -1,0 +1,7 @@
+Line 3: Could not create reference: '*\A..\..\..\..\PROGRA~1\CODE\17\SUPERLST\SuperLst.vbp'.
+Line 25: Class SuperListOCX.SuperListBox of control SuperListBox1 was not a loaded control class.
+Line 31: The property name _ExtentX in SuperListBox1 is invalid.
+Line 32: The property name _ExtentY in SuperListBox1 is invalid.
+Line 42: The property name Caption in SuperListBox1 is invalid.
+Line 43: The property name AllItems in SuperListBox1 is invalid.
+Line 44: The property name BoundPropertyName in SuperListBox1 is invalid.

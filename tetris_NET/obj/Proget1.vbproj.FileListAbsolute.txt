@@ -1,0 +1,34 @@
+C:\Users\Beppe\Desktop\2\Tetris_NET\bin\Debug\WAV\tetris3.wav
+C:\Users\Beppe\Desktop\2\Tetris_NET\bin\Debug\WAV\tetris4.wav
+C:\Users\Beppe\Desktop\2\Tetris_NET\bin\Debug\WAV\tetris5.wav
+C:\Users\Beppe\Desktop\2\Tetris_NET\bin\Debug\WAV\tetris6.wav
+C:\Users\Beppe\Desktop\2\Tetris_NET\bin\Debug\WAV\tetris7.wav
+C:\Users\Beppe\Desktop\2\Tetris_NET\bin\Debug\WAV\tetris8.wav
+C:\Users\Beppe\Desktop\2\Tetris_NET\bin\Debug\Proget1.exe
+C:\Users\Beppe\Desktop\2\Tetris_NET\bin\Debug\Proget1.pdb
+C:\Users\Beppe\Desktop\2\Tetris_NET\bin\Debug\Proget1.xml
+C:\Users\Beppe\Desktop\2\Tetris_NET\bin\Debug\CodeArchitects.VB6Library.dll
+C:\Users\Beppe\Desktop\2\Tetris_NET\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Beppe\Desktop\2\Tetris_NET\obj\Debug\Proget1.frmTetris.resources
+C:\Users\Beppe\Desktop\2\Tetris_NET\obj\Debug\Proget1.Resources.resources
+C:\Users\Beppe\Desktop\2\Tetris_NET\obj\Debug\Proget1.vbproj.GenerateResource.Cache
+C:\Users\Beppe\Desktop\2\Tetris_NET\obj\Debug\Proget1.exe
+C:\Users\Beppe\Desktop\2\Tetris_NET\obj\Debug\Proget1.xml
+C:\Users\Beppe\Desktop\2\Tetris_NET\obj\Debug\Proget1.pdb
+C:\Users\Marco\Desktop\Nuovi samples\2\Tetris_NET\obj\Debug\Proget1.exe
+C:\Users\Marco\Desktop\Nuovi samples\2\Tetris_NET\obj\Debug\Proget1.xml
+C:\Users\Marco\Desktop\Nuovi samples\2\Tetris_NET\obj\Debug\Proget1.pdb
+C:\Users\Marco\Desktop\Nuovi samples\2\Tetris_NET\bin\Debug\WAV\tetris3.wav
+C:\Users\Marco\Desktop\Nuovi samples\2\Tetris_NET\bin\Debug\WAV\tetris4.wav
+C:\Users\Marco\Desktop\Nuovi samples\2\Tetris_NET\bin\Debug\WAV\tetris5.wav
+C:\Users\Marco\Desktop\Nuovi samples\2\Tetris_NET\bin\Debug\WAV\tetris6.wav
+C:\Users\Marco\Desktop\Nuovi samples\2\Tetris_NET\bin\Debug\WAV\tetris7.wav
+C:\Users\Marco\Desktop\Nuovi samples\2\Tetris_NET\bin\Debug\WAV\tetris8.wav
+C:\Users\Marco\Desktop\Nuovi samples\2\Tetris_NET\bin\Debug\Proget1.exe
+C:\Users\Marco\Desktop\Nuovi samples\2\Tetris_NET\bin\Debug\Proget1.pdb
+C:\Users\Marco\Desktop\Nuovi samples\2\Tetris_NET\bin\Debug\Proget1.xml
+C:\Users\Marco\Desktop\Nuovi samples\2\Tetris_NET\bin\Debug\CodeArchitects.VB6Library.dll
+C:\Users\Marco\Desktop\Nuovi samples\2\Tetris_NET\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Marco\Desktop\Nuovi samples\2\Tetris_NET\obj\Debug\Proget1.frmTetris.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\Tetris_NET\obj\Debug\Proget1.Resources.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\Tetris_NET\obj\Debug\Proget1.vbproj.GenerateResource.Cache

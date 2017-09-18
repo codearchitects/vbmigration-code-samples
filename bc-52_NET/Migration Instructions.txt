@@ -1,0 +1,113 @@
+-------------------------------------------------------------------------------
+Sample Name: BC-52
+
+Description: A truly astonishingly simulation of a ciphering machine. Perhaps 
+             this isn’t the kind of business application that you need to 
+             convert to the .NET Framework, but it is surely representative of 
+             all those projects whose logic is just too obscure. Atomix’s 
+             source code is commented more than adequately, yet you need to be
+             a ciphering guru to understand what each statement does.
+
+Download URL: http://www.planet-source-code.com/vb/scripts/ShowCode.asp?txtCodeId=66757&lngWId=1
+-------------------------------------------------------------------------------
+
+IMPORTANT NOTE
+The first step to ensure that you can migrate the VB6 project to VB.NET is 
+loading the original project in the Visual Basic 6 IDE, run it to ensure that 
+it works fine, that all the required type libraries are installed, and that all 
+file paths are correct. 
+Regardless of whether you edited the source code in any way, you should save 
+the VB6 project: this save operation ensures that the .vbp file includes  
+the correct path and version of referenced type libraries. 
+After saving the project, it's usually a good idea to compile the VB6 project
+to an executable, to detect any VB6 compilation errors that would appear under 
+VB.NET as well. 
+(If you don't recompile the project VB Migration Partner will display a warning 
+when you later load the project.)
+
+
+This sample uses transparent image controls for creating clickable hot spots
+over a background image. 
+The problem in converting these controls is that these controls aren’t 
+transparent at all after the migration to VB.NET. You actually need to make 
+them invisible only by setting their Visible property to False, but this 
+remedy prevents the controls from receiving mouse events. 
+VB Migration Partner handles this case by making the control invisible and 
+manually forwarding mouse events to them.
+
+In this particular samples, however, these "hot spots" are creating over another 
+image control containing the background image. 
+In this scenario mouse events are sent to the background image control and
+not the "hot spot" controls. To solve this problem you can set the special 
+IsBackgroundControl property, by means of a WriteProperty pragma. 
+This pragma forces VBMP to search other transparent controls in the form 
+and correctly forwards all mouse events.
+
+Some other hot spots image controls are located over label controls whose have
+to be rendered as background controls too. 
+
+Add these lines at the top of frmMain form code:
+
+'##imgBackground.WriteProperty IsBackgroundControl, True
+'##lblWindow_001.WriteProperty IsBackgroundControl, True
+'##lblWindow_002.WriteProperty IsBackgroundControl, True
+'##lblWindow_003.WriteProperty IsBackgroundControl, True
+'##lblWindow_004.WriteProperty IsBackgroundControl, True
+'##lblWindow_005.WriteProperty IsBackgroundControl, True
+'##lblWindow_006.WriteProperty IsBackgroundControl, True
+
+VB.NET doesn't support transparent label controls. If you want to make the
+layout of migrated form much similar to the original one, you can set the
+label controls BackColor property to a color that is near to the portion of
+background they are located over. 
+
+Add a Form_Load event handler in frmMain with the following pragma 
+statements:
+
+'##InsertStatement lblWindow_001.BackColor = Color.FromArgb(44, 44, 44)
+'##InsertStatement lblWindow_002.BackColor = Color.FromArgb(44, 44, 44)
+'##InsertStatement lblWindow_003.BackColor = Color.FromArgb(44, 44, 44)
+'##InsertStatement lblWindow_004.BackColor = Color.FromArgb(44, 44, 44)
+'##InsertStatement lblWindow_005.BackColor = Color.FromArgb(44, 44, 44)
+'##InsertStatement lblWindow_006.BackColor = Color.FromArgb(44, 44, 44)
+
+With these few edits the sample will compile and run quite exaclty as
+the original, except the shpDot shape isn't shown correctly.
+
+VB Migration Partner typically delivers many warnings that are related to 
+code analysis as well as suggestions about how you can improve the original 
+VB6 code before converting it to VB.NET. 
+You can suppress these warnings by adding the following project-level pragmas 
+at the top of any of the file that make up the project:
+
+'## project:DisableMessage 0501
+
+
+Due to some crashes at run-time caused by an API call, you need to add the 
+following three pragma in Sub PlaySound placed in modMain module:
+
+Public Sub PlaySound(aSound As Integer)
+    'play sound
+
+    Dim Ret
+
+    Select Case aSound
+    Case 0
+        Exit Sub
+    Case 1
+        If gblnSound = False Then Exit Sub
+        '## ReplaceStatement SoundBuffer = System.Text.Encoding.Default.GetString(LoadResData6(1, "Sounds"))
+        SoundBuffer = StrConv(LoadResData(1, "Sounds"), vbUnicode)
+    Case 2
+        If gblnSound = False Then Exit Sub
+        '## ReplaceStatement SoundBuffer = System.Text.Encoding.Default.GetString(LoadResData6(2, "Sounds"))
+        SoundBuffer = StrConv(LoadResData(2, "Sounds"), vbUnicode)
+    Case 3
+    	'## ReplaceStatement SoundBuffer = System.Text.Encoding.Default.GetString(LoadResData6(3, "Sounds"))
+        SoundBuffer = StrConv(LoadResData(3, "Sounds"), vbUnicode)
+    End Select
+
+    
+    '## ParseReplace Ret = sndPlaySound(SoundBuffer, SND_NODEFAULT Or SND_MEMORY)
+    Ret = sndPlaySound(SoundBuffer, SND_ASYNC Or SND_NODEFAULT Or SND_MEMORY)
+End Sub

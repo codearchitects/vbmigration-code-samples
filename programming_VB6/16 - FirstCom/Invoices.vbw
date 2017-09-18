@@ -1,0 +1,10 @@
+Form1 = 110, 145, 1121, 652, , 132, 132, 659, 484, C
+CInvoiceLine = 44, 44, 777, 520, C
+CInvoice = 15, 38, 661, 496, C
+CCustomer = 88, 88, 821, 564, C
+CAddress = 132, 132, 865, 608, 
+Factory = 198, 198, 931, 674, C
+CInvoiceLines = 44, 44, 777, 520, C
+CInvoices = 92, 126, 825, 602, C
+CCustomers = 110, 110, 843, 586, 
+CCompany = 154, 154, 887, 630, 

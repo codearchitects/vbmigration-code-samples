@@ -1,0 +1,26 @@
+C:\Users\Beppe\Desktop\2\ExpressionEvaluator_NET\bin\Debug\pff.wav
+C:\Users\Beppe\Desktop\2\ExpressionEvaluator_NET\bin\Debug\flip.wav
+C:\Users\Beppe\Desktop\2\ExpressionEvaluator_NET\bin\Debug\Eval.exe
+C:\Users\Beppe\Desktop\2\ExpressionEvaluator_NET\bin\Debug\Eval.pdb
+C:\Users\Beppe\Desktop\2\ExpressionEvaluator_NET\bin\Debug\Eval.xml
+C:\Users\Beppe\Desktop\2\ExpressionEvaluator_NET\bin\Debug\CodeArchitects.VB6Library.dll
+C:\Users\Beppe\Desktop\2\ExpressionEvaluator_NET\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Beppe\Desktop\2\ExpressionEvaluator_NET\obj\Debug\Eval.frmEval.resources
+C:\Users\Beppe\Desktop\2\ExpressionEvaluator_NET\obj\Debug\Eval.Resources.resources
+C:\Users\Beppe\Desktop\2\ExpressionEvaluator_NET\obj\Debug\Eval.vbproj.GenerateResource.Cache
+C:\Users\Beppe\Desktop\2\ExpressionEvaluator_NET\obj\Debug\Eval.exe
+C:\Users\Beppe\Desktop\2\ExpressionEvaluator_NET\obj\Debug\Eval.xml
+C:\Users\Beppe\Desktop\2\ExpressionEvaluator_NET\obj\Debug\Eval.pdb
+C:\Users\Marco\Desktop\Nuovi samples\2\ExpressionEvaluator_NET\obj\Debug\Eval.exe
+C:\Users\Marco\Desktop\Nuovi samples\2\ExpressionEvaluator_NET\obj\Debug\Eval.xml
+C:\Users\Marco\Desktop\Nuovi samples\2\ExpressionEvaluator_NET\obj\Debug\Eval.pdb
+C:\Users\Marco\Desktop\Nuovi samples\2\ExpressionEvaluator_NET\bin\Debug\pff.wav
+C:\Users\Marco\Desktop\Nuovi samples\2\ExpressionEvaluator_NET\bin\Debug\flip.wav
+C:\Users\Marco\Desktop\Nuovi samples\2\ExpressionEvaluator_NET\bin\Debug\Eval.exe
+C:\Users\Marco\Desktop\Nuovi samples\2\ExpressionEvaluator_NET\bin\Debug\Eval.pdb
+C:\Users\Marco\Desktop\Nuovi samples\2\ExpressionEvaluator_NET\bin\Debug\Eval.xml
+C:\Users\Marco\Desktop\Nuovi samples\2\ExpressionEvaluator_NET\bin\Debug\CodeArchitects.VB6Library.dll
+C:\Users\Marco\Desktop\Nuovi samples\2\ExpressionEvaluator_NET\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Marco\Desktop\Nuovi samples\2\ExpressionEvaluator_NET\obj\Debug\Eval.frmEval.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\ExpressionEvaluator_NET\obj\Debug\Eval.Resources.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\ExpressionEvaluator_NET\obj\Debug\Eval.vbproj.GenerateResource.Cache

@@ -1,0 +1,28 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\ProviderName]
+@="Description"
+
+[HKEY_CLASSES_ROOT\ProviderName\CLSID]
+@="{ProviderClsId}"
+
+[HKEY_CLASSES_ROOT\CLSID\{ProviderClsId}]
+@="ProviderName"
+
+[HKEY_CLASSES_ROOT\CLSID\{ProviderClsId}\InprocServer32]
+@="c:\\Program Files\\Common Files\\System\\OLE DB\\MSDAOSP.DLL"
+"ThreadingModel"="Both"
+
+[HKEY_CLASSES_ROOT\CLSID\{ProviderClsId}\ProgID]
+@="ProviderName.1"
+
+[HKEY_CLASSES_ROOT\CLSID\{ProviderClsId}\VersionIndependentProgID]
+@="ProviderName"
+
+[HKEY_CLASSES_ROOT\CLSID\{ProviderClsId}\OLE DB Provider]
+@="Description"
+
+[HKEY_CLASSES_ROOT\CLSID\{ProviderClsId}\OSP Data Object]
+@="DataSourceClassName"
+
+

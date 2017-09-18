@@ -1,0 +1,4 @@
+VBGROUP 5.0
+Project=MDIDemo1.vbp
+StartupProject=MDIDemo2.vbp
+Project=MDIDemo3.vbp

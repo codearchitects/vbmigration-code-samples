@@ -1,0 +1,11 @@
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BarcodeGen_NET\bin\Debug\BarcodeGenerator.exe
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BarcodeGen_NET\bin\Debug\BarcodeGenerator.pdb
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BarcodeGen_NET\bin\Debug\BarcodeGenerator.xml
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BarcodeGen_NET\bin\Debug\CodeArchitects.VB6Library.dll
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BarcodeGen_NET\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BarcodeGen_NET\obj\Debug\BarcodeGenerator.Form1.resources
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BarcodeGen_NET\obj\Debug\BarcodeGenerator.Resources.resources
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BarcodeGen_NET\obj\Debug\BarcodeGenerator.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BarcodeGen_NET\obj\Debug\BarcodeGenerator.exe
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BarcodeGen_NET\obj\Debug\BarcodeGenerator.xml
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\BarcodeGen_NET\obj\Debug\BarcodeGenerator.pdb

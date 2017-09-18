@@ -1,0 +1,34 @@
+C:\Users\Beppe\Desktop\2\PhoneBook_NET\bin\Debug\PhoneBook.mdb
+C:\Users\Beppe\Desktop\2\PhoneBook_NET\bin\Debug\PhoneBook.exe
+C:\Users\Beppe\Desktop\2\PhoneBook_NET\bin\Debug\PhoneBook.pdb
+C:\Users\Beppe\Desktop\2\PhoneBook_NET\bin\Debug\PhoneBook.xml
+C:\Users\Beppe\Desktop\2\PhoneBook_NET\bin\Debug\CodeArchitects.VB6Library.dll
+C:\Users\Beppe\Desktop\2\PhoneBook_NET\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Beppe\Desktop\2\PhoneBook_NET\obj\Debug\PhoneBook.frm_About.resources
+C:\Users\Beppe\Desktop\2\PhoneBook_NET\obj\Debug\PhoneBook.frm_AddNew.resources
+C:\Users\Beppe\Desktop\2\PhoneBook_NET\obj\Debug\PhoneBook.frm_Edit.resources
+C:\Users\Beppe\Desktop\2\PhoneBook_NET\obj\Debug\PhoneBook.frm_Find.resources
+C:\Users\Beppe\Desktop\2\PhoneBook_NET\obj\Debug\PhoneBook.frm_Main.resources
+C:\Users\Beppe\Desktop\2\PhoneBook_NET\obj\Debug\PhoneBook.frm_PrintPreview.resources
+C:\Users\Beppe\Desktop\2\PhoneBook_NET\obj\Debug\PhoneBook.Resources.resources
+C:\Users\Beppe\Desktop\2\PhoneBook_NET\obj\Debug\PhoneBook.vbproj.GenerateResource.Cache
+C:\Users\Beppe\Desktop\2\PhoneBook_NET\obj\Debug\PhoneBook.exe
+C:\Users\Beppe\Desktop\2\PhoneBook_NET\obj\Debug\PhoneBook.xml
+C:\Users\Beppe\Desktop\2\PhoneBook_NET\obj\Debug\PhoneBook.pdb
+C:\Users\Marco\Desktop\Nuovi samples\2\PhoneBook_NET\obj\Debug\PhoneBook.exe
+C:\Users\Marco\Desktop\Nuovi samples\2\PhoneBook_NET\obj\Debug\PhoneBook.xml
+C:\Users\Marco\Desktop\Nuovi samples\2\PhoneBook_NET\obj\Debug\PhoneBook.pdb
+C:\Users\Marco\Desktop\Nuovi samples\2\PhoneBook_NET\bin\Debug\PhoneBook.mdb
+C:\Users\Marco\Desktop\Nuovi samples\2\PhoneBook_NET\bin\Debug\PhoneBook.exe
+C:\Users\Marco\Desktop\Nuovi samples\2\PhoneBook_NET\bin\Debug\PhoneBook.pdb
+C:\Users\Marco\Desktop\Nuovi samples\2\PhoneBook_NET\bin\Debug\PhoneBook.xml
+C:\Users\Marco\Desktop\Nuovi samples\2\PhoneBook_NET\bin\Debug\CodeArchitects.VB6Library.dll
+C:\Users\Marco\Desktop\Nuovi samples\2\PhoneBook_NET\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Marco\Desktop\Nuovi samples\2\PhoneBook_NET\obj\Debug\PhoneBook.frm_About.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\PhoneBook_NET\obj\Debug\PhoneBook.frm_AddNew.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\PhoneBook_NET\obj\Debug\PhoneBook.frm_Edit.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\PhoneBook_NET\obj\Debug\PhoneBook.frm_Find.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\PhoneBook_NET\obj\Debug\PhoneBook.frm_Main.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\PhoneBook_NET\obj\Debug\PhoneBook.frm_PrintPreview.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\PhoneBook_NET\obj\Debug\PhoneBook.Resources.resources
+C:\Users\Marco\Desktop\Nuovi samples\2\PhoneBook_NET\obj\Debug\PhoneBook.vbproj.GenerateResource.Cache

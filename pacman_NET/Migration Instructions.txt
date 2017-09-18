@@ -1,0 +1,189 @@
+-------------------------------------------------------------------------------
+Sample Name: PacMan
+
+Description: A nearly perfect replica of the classic arcade game. The VB6 code 
+             uses advanced features, such as playing WAV files, displaying 
+             complex graphics, and animating multiple sprites using the BltBit 
+             API function. Only a conversion tool that relies on a support 
+             library can migrate such an application.
+
+Download URL: http://www.planetsourcecode.com/vb/scripts/ShowCode.asp?txtCodeId=32821&lngWId=1
+-------------------------------------------------------------------------------
+
+IMPORTANT NOTE
+The first step to ensure that you can migrate the VB6 project to VB.NET is 
+loading the original project in the Visual Basic 6 IDE, run it to ensure that 
+it works fine, that all the required type libraries are installed, and that all 
+file paths are correct. 
+Regardless of whether you edited the source code in any way, you should save 
+the VB6 project: this save operation ensures that the .vbp file includes  
+the correct path and version of referenced type libraries. 
+After saving the project, it's usually a good idea to compile the VB6 project
+to an executable, to detect any VB6 compilation errors that would appear under 
+VB.NET as well. 
+(If you don't recompile the project VB Migration Partner will display a warning 
+when you later load the project.)
+
+
+The sample relies on a few data files, therefore you need some AddDataFile pragmas
+to have VB Migration Partner copy these files to the VB.NET solutions's folder. 
+Add the following lines at the top of basPacman.bas file:
+
+'## AddDataFile EatPill.wav
+'## AddDataFile extralife.wav
+'## AddDataFile fruiteat.wav
+'## AddDataFile ghosteat.wav
+'## AddDataFile killed.wav
+'## AddDataFile StartMusic.wav
+'## AddDataFile startmusicold.wav
+
+'## AddDataFile Level1.bmp
+'## AddDataFile LevelOld.bmp
+'## AddDataFile PacPics.bmp
+'## AddDataFile PacPicsOld.bmp
+
+
+Next, you need an ArrayBounds pragma to handle an array with nonzero
+lower index. Add this pragma in basPacSetUp.bas module, as follows:
+
+
+' set up the User Defined Type Variables
+Public Pacman           As UDTPacman
+'## Ghost.ArrayBounds ForceZero
+Public Ghost(1 To 4)    As UDTGhost
+Public Sprite(4)        As UDTSprites
+Public PacLevel(27, 33) As UDTPacLevel
+Public Game             As UDTGame
+Public PacmanBackUp(1)  As UDTPacman
+
+Finally, you need a few InsertStatement pragmas to add the code that
+release the device context's handle allocated with a call to the hDC 
+property. Here's how the code looks like with the added pragmas:
+
+
+Sub ShowLives()
+
+  Dim nLoop     As Integer ' number loop
+  Dim Xo        As Integer ' X offset of fruit
+  Dim Yo        As Integer ' Y offset of fruit
+  
+  With frmPacMan
+    
+    ' clear the stats picturebox
+    .pctStats.Cls
+    
+    ' display all the pacmen
+    For nLoop = 1 To Pacman.Lives - 1
+      BitBlt .pctStats.hDC, nLoop * 32 - 32, 0, 32, 32, .pctTiles.hDC, 96, 224, BitbltOps.SRCCOPY
+    Next
+    
+    ' display all the fruit as to which level pacman is up to
+    For nLoop = 0 To Pacman.Level - 1
+      Xo = Int(nLoop Mod 4) * 32
+      Yo = Int(nLoop / 4) * 32 + 256
+      BitBlt .pctStats.hDC, 416 - nLoop * 32, 0, 32, 32, .pctTiles.hDC, Xo, Yo, BitbltOps.SRCCOPY
+    Next
+    
+    '## InsertStatement .pctStats.ReleaseHdc()
+    '## InsertStatement .pctTiles.ReleaseHdc()
+
+    
+    frmPacMan.pctStats.Refresh
+  
+  End With
+  
+End Sub
+
+
+
+Sub ShowBlit(ByVal X As Integer, ByVal Y As Integer, _
+               ByVal XP As Integer, ByVal YP As Integer, ByVal pos As Integer)
+
+  Dim maskOffset As Integer
+  
+  With frmPacMan
+
+    ' copy info behind the sprite into a buffer
+    BitBlt .pctBack.hDC, 0, pos * 32, 32, 32, .pctScreen.hDC, X, Y, BitbltOps.SRCCOPY
+  
+    If pos = 0 Or pos = 5 Then ' pacman or fruit only
+      maskOffset = XP + 128
+    Else
+      If Ghost(pos).Eyesonly = False Then
+        maskOffset = 192 ' normal ghost mask
+      Else
+        maskOffset = 224 ' eyes mask
+      End If
+    End If
+    
+    BitBlt .pctScreen.hDC, X, Y, 32, 32, .pctTiles.hDC, maskOffset, YP, BitbltOps.SRCAND
+    BitBlt .pctScreen.hDC, X, Y, 32, 32, .pctTiles.hDC, XP, YP, BitbltOps.SRCPAINT
+  
+    '## InsertStatement .pctBack.ReleaseHdc()
+    '## InsertStatement .pctScreen.ReleaseHdc()
+    '## InsertStatement .pctTiles.ReleaseHdc()
+
+  End With
+
+End Sub
+
+
+Sub HideBlit(X As Integer, Y As Integer, pos As Integer)
+
+  With frmPacMan
+    ' restore the background from under the sprite
+    BitBlt .pctScreen.hDC, X, Y, 32, 32, .pctBack.hDC, 0, pos * 32, BitbltOps.SRCCOPY
+    '## InsertStatement .pctScreen.ReleaseHdc()
+    '## InsertStatement .pctBack.ReleaseHdc()
+
+  End With
+  
+End Sub
+
+
+Sub RefreshLevel()
+
+  Dim i As Integer
+  Dim j As Integer
+
+  If Game.Enhanced = True Then
+    ' later on, Need to change the number so each level has a new back ground pic
+    frmPacMan.pctScreen.Picture = LoadPicture(App.Path & "/level1.bmp")
+  Else
+    frmPacMan.pctScreen.Picture = LoadPicture(App.Path & "/levelold.bmp")
+  End If
+  
+  frmPacMan.pctpicture.Picture = frmPacMan.pctScreen.Picture ' keep a copy of the picture
+  
+  ' draw all the dots and powerpills on the screen
+  For j = 1 To 29
+    For i = 1 To 26
+      With PacLevel(i, j)
+       
+        If .Block = Pac.Pill Then ' draws a pill on the screen
+          BitBlt frmPacMan.pctScreen.hDC, i * 16, j * 16, 16, 16, frmPacMan.pctTiles.hDC, 0, 320 + 16, BitbltOps.SRCAND
+          BitBlt frmPacMan.pctScreen.hDC, i * 16, j * 16, 16, 16, frmPacMan.pctTiles.hDC, 0, 320, BitbltOps.SRCPAINT
+        End If
+        
+        If .Block = Pac.PowerPill Then        ' draws a powerpill on the screen
+          BitBlt frmPacMan.pctScreen.hDC, i * 16, j * 16, 16, 16, frmPacMan.pctTiles.hDC, 16, 320 + 16, BitbltOps.SRCAND
+          BitBlt frmPacMan.pctScreen.hDC, i * 16, j * 16, 16, 16, frmPacMan.pctTiles.hDC, 16, 320, BitbltOps.SRCPAINT
+        End If
+      End With
+    Next
+  Next
+  
+  '## InsertStatement frmPacMan.pctScreen.ReleaseHdc()
+  '## InsertStatement frmPacMan.pctTiles.ReleaseHdc()
+
+End Sub
+
+
+VB Migration Partner typically delivers many warnings that are related to 
+code analysis as well as suggestions about how you can improve the original 
+VB6 code before converting it to VB.NET. 
+You can suppress these warnings by adding the following project-level pragmas 
+at the top of any of the file that make up the project:
+
+'## project:DisableMessages CodeAnalysis
+'## project:DisableMessage 1478

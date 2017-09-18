@@ -1,0 +1,59 @@
+VERSION 5.00
+Begin VB.PropertyPage General 
+   Caption         =   "General"
+   ClientHeight    =   3495
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   5925
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   3495
+   ScaleWidth      =   5925
+   Begin CustOCX.Customer Customer1 
+      Height          =   2895
+      Left            =   240
+      TabIndex        =   0
+      Top             =   0
+      Width           =   5535
+      _ExtentX        =   9763
+      _ExtentY        =   5106
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+   End
+End
+Attribute VB_Name = "General"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Option Explicit
+
+Private Sub Customer1_Change(PropertyName As String)
+    Changed = True
+End Sub
+
+Private Sub PropertyPage_ApplyChanges()
+    ' Read all properties in one loop
+    Dim propname As Variant
+    For Each propname In Array("CustomerName", "Address", "City", "ZipCode", "Country", "Phone", "Fax")
+        CallByName SelectedControls(0), propname, VbLet, _
+            CallByName(Customer1, propname, VbGet)
+    Next
+End Sub
+
+Private Sub PropertyPage_SelectionChanged()
+    ' Assign all properties in one loop
+    Dim propname As Variant
+    For Each propname In Array("CustomerName", "Address", "City", "ZipCode", "Country", "Phone", "Fax")
+        CallByName Customer1, propname, VbLet, _
+            CallByName(SelectedControls(0), propname, VbGet)
+    Next
+End Sub
+
+

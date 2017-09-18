@@ -1,0 +1,13 @@
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\CoolProgressBar_NET\bin\Debug\pCoolProgressBar_Demo.exe
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\CoolProgressBar_NET\bin\Debug\pCoolProgressBar_Demo.pdb
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\CoolProgressBar_NET\bin\Debug\pCoolProgressBar_Demo.xml
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\CoolProgressBar_NET\bin\Debug\CodeArchitects.VB6Library.dll
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\CoolProgressBar_NET\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\CoolProgressBar_NET\obj\Debug\pCoolProgressBar_Demo.frmMain.resources
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\CoolProgressBar_NET\obj\Debug\pCoolProgressBar_Demo.frmMsgbox.resources
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\CoolProgressBar_NET\obj\Debug\pCoolProgressBar_Demo.frmSecondary.resources
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\CoolProgressBar_NET\obj\Debug\pCoolProgressBar_Demo.Resources.resources
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\CoolProgressBar_NET\obj\Debug\pCoolProgressBar_Demo.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\CoolProgressBar_NET\obj\Debug\pCoolProgressBar_Demo.exe
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\CoolProgressBar_NET\obj\Debug\pCoolProgressBar_Demo.xml
+C:\Documents and Settings\Admin\Desktop\SAMPLES\VB6 Samples in VB6\CoolProgressBar_NET\obj\Debug\pCoolProgressBar_Demo.pdb

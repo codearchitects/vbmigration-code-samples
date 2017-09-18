@@ -1,0 +1,10 @@
+frmRecord = 402, 327, 956, 679, C, 62, 17, 585, 466, C
+DataEnvironment1 = 44, 44, 708, 353, C, 296, 36, 588, 472, C
+clsDow = 44, 44, 598, 396, C
+rsclsProducts = 14, 45, 969, 676, 
+uctProductsSingleRecord = 62, 95, 589, 447, C, 176, 176, 703, 528, C
+frmGrid = 144, 91, 671, 443, , 21, 62, 658, 384, C
+rsclsProducts2 = 53, 11, 685, 363, 
+uctProductsDataGrid = 23, 35, 1009, 614, , 132, 132, 659, 484, C
+frmMain = 110, 110, 637, 462, C, 88, 88, 490, 269, C
+VBMigrationStudio_PartialSupportMethods = 138, 138, 825, 784, 

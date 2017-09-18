@@ -192,7 +192,7 @@ A nearly perfect replica of the classic arcade game. The VB6 code uses quite a f
 
 For the VB.NET project to run correctly we had to add one ArrayBounds pragma and some InsertStatement pragmas. The only relevant defect in the VB.NET code is an excessive amount of flickering, an issue that could be easily fixed by means of double buffering. (Such flickering is especially noticeable under Microsoft Vista with Aero theme.) Except for this detail, the VB.NET version of the game is fully playable.
 
-#Classic VB
+### Classic VB
 *by <unknown author> - VB6 Source Code*
 
 ![](images/classicvb.jpg?raw=true)

@@ -23,7 +23,7 @@ Most VB6 samples have been instrumented with a few pragmas whose only effect is 
 
 ## Code Samples
 
-> All VB6 projects are property of their respective owners (that include  vb6 source code, images, logos, and brands). For each VB6 project you can find a corresponding “_NET” folder that contains the result of the conversion to VB.NET using Code Architects’ VB Migration Partner. VB6 source code was not modified before conversion, except (in some cases) for the insertion of remarks that work as directives for the conversion process (a.k.a. migration pragmas).
+> All VB6 projects are property of their respective owners (that include  vb6 source code, images, logos, and brands). For each VB6 project you can find a corresponding “_NET” folder that contains the result of the conversion to VB.NET using Code Architects’ [VB Migration Partner](http://www.vbmigration.com/Default.aspx). VB6 source code was not modified before conversion, except (in some cases) for the insertion of remarks that work as directives for the conversion process (a.k.a. [migration pragmas](http://www.vbmigration.com/documentation/chapter5.aspx)).
 
 ### Samples from “Programming Microsoft Visual Basic 6”
 *by Francesco Balena – © Code Architects Srl*

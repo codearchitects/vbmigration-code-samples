@@ -23,6 +23,8 @@ Most VB6 samples have been instrumented with a few pragmas whose only effect is 
 
 ## Code Samples
 
+<p><span style="color:red">All VB6 projects are property of their respective owners (that include  vb6 source code, images, logos, and brands). For each VB6 project you can find a corresponding “_NET” folder that contains the result of the conversion to VB.NET using Code Architects’ VB Migration Partner. VB6 source code was not modified before conversion, except (in some cases) for the insertion of remarks that work as directives for the conversion process (a.k.a. migration pragmas).</span></p>
+
 ### Samples from “Programming Microsoft Visual Basic 6”
 *by Francesco Balena – © Code Architects Srl*
 
@@ -56,24 +58,6 @@ VB Migration Partner migrates correctly even VB6 WebBrowser control.
 Amoung its features we find auto-complete URL, print, HTML source window, back and forward support, progress bar and favorite window. 
 
 This sample demonstrates how powerful is our migration engine, which converts it with no need for any pragma.
-
-### ezDatabase
-*by Daniel M. - VB6 Source*
-
-![](images/ezdatabase.jpg?raw=true)
-
-This sample surveys several ADODB functions, showing how VB Migration Partner deals correctly with data related applications. 
-
-The converted .NET sample works exactly like the original VB6 application - including for some bugs in the original code - with the help of a few migration pragmas. 
-
-### Cool Progress Bar
-*by João F. S. Henriques - VB6 Source*
-
-![](images/coolProgressBar.jpg?raw=true)
-
-A simple sample that uses a nice progress bar filled with a gradient color transition. 
-
-This sample shows VB Migration Partner's capabilities to easily migrate an user control which even uses the BltBit API function to render its effects. 
 
 ### LCD Clock
 *by Michael Margold - VB6 Source*
@@ -237,13 +221,6 @@ The VB6 code migrates without any problem and the VB.NET application behaves alm
 ![](images/cdarchive.jpg?raw=true)
 
 A simple utility that allows you to scan a CD and archive its contents on an MDB database for subsequent searches. We added one ArrayBounds pragma to handle an array with nonzero lower index and two UseSystemString pragmas to pass a structure to the FindFirstFile/FindNextFile Windows API methods.
-
-### Code Library
-*by Philip V. Naparan - VB6 Source*
-
-![](images/codelibrary.jpg?raw=true)
-
-A code librarian that allows you to store fragments written in any programming language. It even comes with a small database of useful VB6, VB.NET, ASP.NET and Java snippets. VB Migration Partner converts its 10 forms and 1 module (1200 total lines of code) in a blink. What’s more important, the VB.NET code compiles and executes correctly adding few pragmas.
 
 ### Master Mind
 *by Alberto Vettolani - VB6 Source*
